@@ -1,0 +1,9 @@
+*.pyc
+*.swp
+/include
+/share
+/lib
+/bin
+.DS_Store
+.Python
+data.db

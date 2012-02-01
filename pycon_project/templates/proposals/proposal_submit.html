@@ -1,0 +1,46 @@
+{% extends "proposals/base.html" %}
+
+{% load boxes_tags %}
+{% load markitup_tags %}
+{% load uni_form_tags %}
+
+{% block extra_head %}
+    <link rel="stylesheet" href="{{ STATIC_URL }}css/facebox.css" />
+    <style>
+        .uniForm .formHint {
+            line-height: 12pt;
+            margin-top: 8px;
+            width: 99%;
+        }
+        #div_id_kind ul li {
+            display: inline;
+        }
+        #div_id_extreme label {
+            display: inline;
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/proposals.css" />
+{% endblock %}
+
+
+{% block content %}
+    <h1>Submit A Proposal</h1>
+    
+    {% box "example_proposal" %}
+    
+    {% markitup_media %}
+    <form method="POST" action="" enctype="multipart/form-data" class="uniForm">
+        {% csrf_token %}
+        <fieldset>
+            {{ form|as_uni_form }}
+            <div class="form_block">
+                <p>
+                    You will be able to edit your proposal after it has been submitted. The program committee may ask questions, provide feedback, and even suggest changes to your proposal as part of the review processes.
+                </p>
+                <input type="submit" name="finish" value="Save" />
+                <!-- <span style="float: right; padding: 4px 6px">or</span> -->
+                <input type="submit" name="add-speakers" value="Save and Add Additional Speakers" />
+            </div>
+        </fieldset>
+    </form>
+{% endblock %}
