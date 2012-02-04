@@ -138,6 +138,7 @@ INSTALLED_APPS = [
     "django.contrib.sites",
     "django.contrib.messages",
     "django.contrib.humanize",
+    "django.contrib.staticfiles",
     "gunicorn",
     
     # external
@@ -238,8 +239,6 @@ ANALYTICS_SETTINGS = {
     }
 }
 
-EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
-
 # local_settings.py can be used to override environment-specific settings
 # like database and email that differ between development and production.
 try:
@@ -247,7 +246,4 @@ try:
 except ImportError:
     pass
 
-DEFAULT_FROM_EMAIL = "mailer@us.pycon.org"
-MEDIA_URL = "/2012/site_media/media/"
-STATIC_URL = "/2012/site_media/static/"
-ADMIN_MEDIA_PREFIX = "/2012/site_media/static/admin/"
+DEFAULT_FROM_EMAIL = "mailer@pycon.tw"

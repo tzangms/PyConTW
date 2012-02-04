@@ -4,6 +4,9 @@
 /share
 /lib
 /bin
+/local
 .DS_Store
 .Python
 data.db
+site_media
+local_settings.py
