@@ -5,6 +5,7 @@
 /lib
 /bin
 /local
+/build
 .DS_Store
 .Python
 data.db

@@ -2,17 +2,17 @@
 <nav id="main-nav">
     <ul>
         <li><a href="{% url about %}" id="link-about">{% trans "About" %}</a></li>
-        {# <li><a href="{% url schedule_conference %}" id="link-schedule">Schedule</a></li> #}
-        <li><a href="{% url speaker_dashboard %}" id="link-speakers">Speakers</a></li>
+        {# <li><a href="{% url schedule_conference %}" id="link-schedule">{% trans "Schedule" %}</a></li> #}
+        <li><a href="{% url speaker_dashboard %}" id="link-speakers">{% trans "Speakers" %}</a></li>
         {# {% if is_reviewer or is_reviewer_tutorials %} #}
         {#     <li><a href="{% if is_reviewer %}{% url review_list %}{% else %}{% if is_reviewer_tutorials %}{% url review_tutorial_list %}{% endif %}{% endif %}" id="link-reviewers">Reviewers</a></li> #}
         {# {% endif %} #}
-        {# <li><a href="{% url wakawaka_page 'sprints' %}" id="link-sprints">Sprints</a></li> #}
-        {# <li><a href="{% url wakawaka_page 'volunteer' %}" id="link-volunteer">Volunteer</a></li> #}
-        <li><a href="{% url registration %}" id="link-registration">Registration</a></li>
-        <li><a href="{% url venue_detail %}" id="link-venue">Venue</a></li>
-        <li><a href="{% url wakawaka_page 'sponsors' %}" id="link-sponsors">Sponsors</a></li>
-        <li><a href="/2012/sponsors/jobs/" id="link-jobs">Jobs Fair</a></li>
-        <li><a href="/2012/blog/" id="link-blog">Blog</a></li>
+        {# <li><a href="{% url wakawaka_page 'sprints' %}" id="link-sprints">{% trans "Sprints" %}</a></li> #}
+        {# <li><a href="{% url wakawaka_page 'volunteer' %}" id="link-volunteer">{% trans "Volunteer" %}</a></li> #}
+        <li><a href="{% url registration %}" id="link-registration">{% trans "Registration" %}</a></li>
+        <li><a href="{% url venue_detail %}" id="link-venue">{% trans "Venue" %}</a></li>
+        <li><a href="{% url wakawaka_page 'sponsors' %}" id="link-sponsors">{% trans "Sponsors" %}</a></li>
+        <li><a href="/2012/sponsors/jobs/" id="link-jobs">{% trans "Jobs Fair" %}</a></li>
+        <li><a href="/2012/blog/" id="link-blog">{% trans "Blog" %}</a></li>
     </ul>
 </nav>
