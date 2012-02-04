@@ -1,7 +1,7 @@
-{% load wakawaka_tags %}
+{% load wakawaka_tags i18n %}
 <nav id="main-nav">
     <ul>
-        <li><a href="{% url about %}" id="link-about">About</a></li>
+        <li><a href="{% url about %}" id="link-about">{% trans "About" %}</a></li>
         {# <li><a href="{% url schedule_conference %}" id="link-schedule">Schedule</a></li> #}
         <li><a href="{% url speaker_dashboard %}" id="link-speakers">Speakers</a></li>
         {# {% if is_reviewer or is_reviewer_tutorials %} #}

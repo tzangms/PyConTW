@@ -101,6 +101,7 @@ TEMPLATE_LOADERS = [
 MIDDLEWARE_CLASSES = [
     "django.middleware.common.CommonMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
+    "django.middleware.locale.LocaleMiddleware",
     "django.middleware.csrf.CsrfViewMiddleware",
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django_openid.consumer.SessionConsumer",
@@ -247,3 +248,10 @@ except ImportError:
     pass
 
 DEFAULT_FROM_EMAIL = "mailer@pycon.tw"
+
+LANGUAGES = (
+    ('en', 'English'),
+    ('zh-tw', 'Traditional Chinese'),
+)
+
+LOCALE_PATHS = os.path.join(PROJECT_ROOT, 'locale')

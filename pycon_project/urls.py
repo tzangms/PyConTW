@@ -53,6 +53,7 @@ urlpatterns = patterns("",
         url(r"^venue/share-room/", direct_to_template, {"template": "venue/share_room.html"}, name="share_room"),
 
         url(r"^boxes/", include("boxes.urls")),
+        (r'^i18n/', include('django.conf.urls.i18n')),
 
         url(r"^", include("wakawaka.urls")),
 

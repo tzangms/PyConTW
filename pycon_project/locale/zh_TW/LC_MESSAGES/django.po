@@ -1,0 +1,622 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-02-04 19:37+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+#: apps/oauth_callbacks.py:108
+#, python-format
+msgid "Successfully logged in as %(user)s."
+msgstr ""
+
+#: apps/boxes/templatetags/boxes_tags.py:72
+msgid "Create"
+msgstr ""
+
+#: apps/boxes/templatetags/boxes_tags.py:75 templates/wakawaka/page.html:53
+msgid "Edit"
+msgstr ""
+
+#: symposion/sponsors_pro/models.py:18 symposion/sponsors_pro/models.py:164
+msgid "name"
+msgstr ""
+
+#: symposion/sponsors_pro/models.py:19
+msgid "order"
+msgstr ""
+
+#: symposion/sponsors_pro/models.py:20
+msgid "cost"
+msgstr ""
+
+#: symposion/sponsors_pro/models.py:21 symposion/sponsors_pro/models.py:165
+msgid "description"
+msgstr ""
+
+#: symposion/sponsors_pro/models.py:21
+msgid "This is private."
+msgstr ""
+
+#: symposion/sponsors_pro/models.py:33
+msgid "applicant"
+msgstr ""
+
+#: symposion/sponsors_pro/models.py:35
+msgid "sponsor name"
+msgstr ""
+
+#: symposion/sponsors_pro/models.py:36
+msgid "external URL"
+msgstr ""
+
+#: symposion/sponsors_pro/models.py:37
+msgid "annotation"
+msgstr ""
+
+#: symposion/sponsors_pro/models.py:38
+msgid "contact name"
+msgstr ""
+
+#: symposion/sponsors_pro/models.py:39
+msgid "Contact email"
+msgstr ""
+
+#: symposion/sponsors_pro/models.py:40 symposion/sponsors_pro/models.py:192
+msgid "level"
+msgstr ""
+
+#: symposion/sponsors_pro/models.py:41
+msgid "added"
+msgstr ""
+
+#: symposion/sponsors_pro/models.py:42
+msgid "active"
+msgstr ""
+
+#: symposion/sponsors_pro/models.py:167
+msgid "type"
+msgstr ""
+
+#: symposion/sponsors_pro/models.py:187 symposion/sponsors_pro/models.py:213
+msgid "benefit"
+msgstr ""
+
+#: symposion/sponsors_pro/models.py:194 symposion/sponsors_pro/models.py:218
+msgid "max words"
+msgstr ""
+
+#: symposion/sponsors_pro/models.py:195 symposion/sponsors_pro/models.py:219
+msgid "other limits"
+msgstr ""
+
+#: symposion/sponsors_pro/models.py:209
+msgid "sponsor"
+msgstr ""
+
+#: symposion/sponsors_pro/models.py:223
+msgid "text"
+msgstr ""
+
+#: symposion/sponsors_pro/models.py:224
+msgid "file"
+msgstr ""
+
+#: templates/_nav.html:4
+msgid "About"
+msgstr "關於"
+
+#: templates/base.html:31
+msgid "clear"
+msgstr ""
+
+#: templates/account/_openid_login.html:23 templates/account/login.html:42
+msgid "Log in &raquo;"
+msgstr ""
+
+#: templates/account/base.html:14 templates/account/email.html:6
+msgid "Account"
+msgstr ""
+
+#: templates/account/base.html:19 templates/account/email.html:9
+msgid "Email Addresses"
+msgstr ""
+
+#: templates/account/base.html:20 templates/django_openid/associations.html:5
+msgid "OpenID Associations"
+msgstr ""
+
+#: templates/account/base.html:22 templates/account/password_change.html:5
+#: templates/account/password_change.html:8
+#: templates/account/password_reset_from_key.html:5
+#: templates/account/password_reset_from_key.html:8
+msgid "Change Password"
+msgstr ""
+
+#: templates/account/base.html:24 templates/account/password_set.html:6
+#: templates/account/password_set.html:9
+msgid "Set Password"
+msgstr ""
+
+#: templates/account/base.html:28 templates/account/password_delete.html:5
+#: templates/account/password_delete.html:8
+msgid "Delete Password"
+msgstr ""
+
+#: templates/account/base.html:32 templates/account/timezone_change.html:6
+#: templates/account/timezone_change.html:9
+msgid "Timezone"
+msgstr ""
+
+#: templates/account/email.html:18
+msgid "verified"
+msgstr ""
+
+#: templates/account/email.html:20
+msgid "primary"
+msgstr ""
+
+#: templates/account/email.html:28
+msgid "make primary"
+msgstr ""
+
+#: templates/account/email.html:33
+msgid "unverified"
+msgstr ""
+
+#: templates/account/email.html:40
+msgid "re-send verification email"
+msgstr ""
+
+#: templates/account/email.html:51
+msgid "remove"
+msgstr ""
+
+#: templates/account/email.html:58
+msgid "None"
+msgstr ""
+
+#: templates/account/email.html:58
+msgid ""
+"You should really add one so you can receive notifications, reset your "
+"password if you forget it, etc."
+msgstr ""
+
+#: templates/account/email.html:62
+msgid "Add Email Address"
+msgstr ""
+
+#: templates/account/email.html:70
+msgid "add"
+msgstr ""
+
+#: templates/account/language_change.html:6
+#: templates/account/language_change.html:9
+msgid "Language"
+msgstr ""
+
+#: templates/account/language_change.html:11
+msgid "This site can be used in your preferred language."
+msgstr ""
+
+#: templates/account/language_change.html:18
+msgid "Change my language"
+msgstr ""
+
+#: templates/account/login.html:8
+msgid "Login"
+msgstr ""
+
+#: templates/account/login.html:13 templates/account/signup.html:13
+msgid "Log In"
+msgstr ""
+
+#: templates/account/login.html:17 templates/account/password_reset.html:12
+#: templates/account/password_reset_done.html:12
+msgid "Note"
+msgstr ""
+
+#: templates/account/login.html:17 templates/account/password_reset.html:12
+#: templates/account/password_reset_done.html:12
+#, python-format
+msgid "you are already logged in as %(user_display)s."
+msgstr ""
+
+#: templates/account/login.html:21
+#, python-format
+msgid "Don't have an account? <a href=\"%(signup_url)s\">Sign up</a>!"
+msgstr ""
+
+#: templates/account/login.html:35
+msgid "Forgot password?"
+msgstr ""
+
+#: templates/account/login.html:47
+msgid "Or sign in with your OpenID"
+msgstr ""
+
+#: templates/account/login.html:57
+#, python-format
+msgid ""
+"If you have any trouble logging in to your account, contact us at <a href="
+"\"mailto:%(CONTACT_EMAIL)s\">%(CONTACT_EMAIL)s</a>."
+msgstr ""
+
+#: templates/account/logout.html:5
+msgid "Logout"
+msgstr ""
+
+#: templates/account/logout.html:8
+msgid "You've been logged out."
+msgstr ""
+
+#: templates/account/password_change.html:15
+#: templates/account/password_reset_from_key.html:20
+msgid "change password"
+msgstr ""
+
+#: templates/account/password_delete.html:9
+msgid ""
+"You may delete your password since you are currently logged in using OpenID."
+msgstr ""
+
+#: templates/account/password_delete.html:12
+msgid "delete my password"
+msgstr ""
+
+#: templates/account/password_delete_done.html:5
+#: templates/account/password_delete_done.html:8
+msgid "Password Deleted"
+msgstr ""
+
+#: templates/account/password_delete_done.html:9
+msgid "Your password has been deleted."
+msgstr ""
+
+#: templates/account/password_reset.html:7
+#: templates/account/password_reset.html:9
+#: templates/account/password_reset_done.html:6
+#: templates/account/password_reset_done.html:8
+msgid "Password Reset"
+msgstr ""
+
+#: templates/account/password_reset.html:17
+msgid ""
+"Forgotten your password? Enter your email address below, and we'll send you "
+"an email allowing you to reset it."
+msgstr ""
+
+#: templates/account/password_reset.html:24
+msgid "Reset my password"
+msgstr ""
+
+#: templates/account/password_reset.html:29
+#, python-format
+msgid ""
+"If you have any trouble resetting your password, contact us at <a href="
+"\"mailto:%(CONTACT_EMAIL)s\">%(CONTACT_EMAIL)s</a>."
+msgstr ""
+
+#: templates/account/password_reset_done.html:15
+#, python-format
+msgid ""
+"We have sent you an email. If you do not receive it within a few minutes, "
+"contact us at <a href=\"mailto:%(CONTACT_EMAIL)s\">%(CONTACT_EMAIL)s</a>."
+msgstr ""
+
+#: templates/account/password_reset_from_key.html:8
+msgid "Bad Token"
+msgstr ""
+
+#: templates/account/password_reset_from_key.html:12
+#, python-format
+msgid ""
+"The password reset link was invalid, possibly because it has already been "
+"used.  Please request a <a href=\"%(passwd_reset_url)s\">new password reset</"
+"a>."
+msgstr ""
+
+#: templates/account/password_set.html:16
+msgid "set password"
+msgstr ""
+
+#: templates/account/signup.html:6
+msgid "Signup"
+msgstr ""
+
+#: templates/account/signup.html:11
+msgid "Sign Up"
+msgstr ""
+
+#: templates/account/signup.html:13
+msgid "Already have an account?"
+msgstr ""
+
+#: templates/account/signup.html:18
+msgid "You are already logged in."
+msgstr ""
+
+#: templates/account/signup.html:29 templates/django_openid/register.html:18
+#: templates/oauth_access/finish_signup.html:19
+msgid "Sign Up &raquo;"
+msgstr ""
+
+#: templates/account/signup.html:43 templates/django_openid/register.html:26
+#: templates/oauth_access/finish_signup.html:28
+#, python-format
+msgid ""
+"If you have any trouble creating your account, contact us at <a href="
+"\"mailto:%(CONTACT_EMAIL)s\">%(CONTACT_EMAIL)s</a>."
+msgstr ""
+
+#: templates/account/timezone_change.html:11
+msgid ""
+"This site can localize all times into your preferred timezone. Change your "
+"timezone below."
+msgstr ""
+
+#: templates/account/timezone_change.html:18
+msgid "Change my timezone"
+msgstr ""
+
+#: templates/account/verification_sent.html:5
+#: templates/account/verification_sent.html:8
+msgid "Verify your email address"
+msgstr ""
+
+#: templates/account/verification_sent.html:10
+#, python-format
+msgid ""
+"We have sent you an email to <b>%(email)s</b> for verification. Follow the "
+"link provided to finalize the signup process. If you do not receive it "
+"within a few minutes, contact us at <a href=\"mailto:%(CONTACT_EMAIL)s\">"
+"%(CONTACT_EMAIL)s</a>."
+msgstr ""
+
+#: templates/django_openid/already_logged_in.html:5
+#: templates/django_openid/already_logged_in.html:8
+msgid "Already logged in"
+msgstr ""
+
+#: templates/django_openid/already_logged_in.html:11
+#, python-format
+msgid ""
+"You are already logged into the site. To login with a different OpenID "
+"please <a href=\"%(openid_logout)s?next=%(url_acct_logout)s\">logout</a> "
+"first."
+msgstr ""
+
+#: templates/django_openid/associate.html:6
+#: templates/django_openid/associate.html:9
+msgid "Verify this Association"
+msgstr ""
+
+#: templates/django_openid/associations.html:8
+msgid "Manage OpenID Associations"
+msgstr ""
+
+#: templates/django_openid/associations.html:13
+#, python-format
+msgid ""
+"You have not set a password for this user account. You are unable to remove "
+"OpenID associations until you <a href=\"%(acct_passwd_set_url)s\">set a "
+"password</a>."
+msgstr ""
+
+#: templates/django_openid/associations.html:17
+#, python-format
+msgid ""
+"Your account is currently associated with the following OpenID %(buttons)s:"
+msgstr ""
+
+#: templates/django_openid/associations.html:26
+msgid "Remove association"
+msgstr ""
+
+#: templates/django_openid/associations.html:32
+msgid "To associate a new OpenID with this account, sign in with it here:"
+msgstr ""
+
+#: templates/django_openid/associations.html:39
+msgid "Authenticate and associate with this account"
+msgstr ""
+
+#: templates/django_openid/register.html:6
+#: templates/django_openid/register.html:9
+msgid "Choose a Username"
+msgstr ""
+
+#: templates/django_openid/register.html:11
+msgid ""
+"Now that you have logged in with your OpenID, we need you to choose a "
+"username and email for this site."
+msgstr ""
+
+#: templates/django_openid/register.html:24
+#, python-format
+msgid ""
+"<strong>Already have an account?</strong> <a href=\"%(acct_login_openid_url)s"
+"\">Log in here</a> to associate your OpenID with your existing account."
+msgstr ""
+
+#: templates/django_openid/registration_closed.html:5
+#: templates/django_openid/registration_closed.html:8
+msgid "Signup closed"
+msgstr ""
+
+#: templates/django_openid/registration_closed.html:10
+msgid ""
+"Whoops, you can't register for an account now. This site is currently closed "
+"for sign-up."
+msgstr ""
+
+#: templates/emailconfirmation/confirm_email.html:7
+msgid "Confirm Email"
+msgstr ""
+
+#: templates/emailconfirmation/confirm_email.html:11
+msgid "Email Confirmed"
+msgstr ""
+
+#: templates/emailconfirmation/confirm_email.html:13
+#, python-format
+msgid ""
+"You have confirmed that %(email)s is an email address for user "
+"'%(user_display)s'."
+msgstr ""
+
+#: templates/emailconfirmation/confirm_email.html:16
+msgid "Invalid confirmation key."
+msgstr ""
+
+#: templates/oauth_access/finish_signup.html:6
+msgid "Finish Signup"
+msgstr ""
+
+#: templates/oauth_access/finish_signup.html:9
+msgid "Finish Sign Up"
+msgstr ""
+
+#: templates/oauth_access/finish_signup.html:26
+#, python-format
+msgid ""
+"By clicking \"Sign Up\", you are indicating that you have read and agree to "
+"the <a href=\"%(terms_url)s\">Terms of Use</a> and <a href=\"%(privacy_url)s"
+"\">Privacy Policy</a>."
+msgstr ""
+
+#: templates/wakawaka/changes.html:18
+#, python-format
+msgid "Changes for %(slug)s"
+msgstr ""
+
+#: templates/wakawaka/edit.html:15 templates/wakawaka/edit.html.py:24
+#, python-format
+msgid "Add %(slug)s"
+msgstr ""
+
+#: templates/wakawaka/edit.html:17 templates/wakawaka/edit.html.py:26
+#, python-format
+msgid "Edit %(slug)s"
+msgstr ""
+
+#: templates/wakawaka/edit.html:31
+msgid "You are editing an revision which is not the latest!"
+msgstr ""
+
+#: templates/wakawaka/edit.html:39
+msgid "Save changes"
+msgstr ""
+
+#: templates/wakawaka/edit.html:46
+msgid "Cancel"
+msgstr ""
+
+#: templates/wakawaka/edit.html:50
+#, python-format
+msgid "The page was locked for %(lock_owner)s about %(lock_timestamp)s ago."
+msgstr ""
+
+#: templates/wakawaka/edit.html:51
+msgid "Reset lock"
+msgstr ""
+
+#: templates/wakawaka/edit.html:59
+msgid "Please confirm deletion"
+msgstr ""
+
+#: templates/wakawaka/edit.html:63
+msgid "Delete"
+msgstr ""
+
+#: templates/wakawaka/edit.html:68
+msgid "Revisions for this page"
+msgstr ""
+
+#: templates/wakawaka/page.html:28
+msgid "You are viewing an older revision!"
+msgstr ""
+
+#: templates/wakawaka/page.html:30
+msgid "See the latest version"
+msgstr ""
+
+#: templates/wakawaka/page.html:45
+msgid "DATETIME_FORMAT"
+msgstr ""
+
+#: templates/wakawaka/page.html:45
+#, python-format
+msgid ""
+"\n"
+"                    Recently modified by <em>%(creator)s</em>: %(modified)s\n"
+"                "
+msgstr ""
+
+#: templates/wakawaka/page.html:48
+msgid "History"
+msgstr ""
+
+#: templates/wakawaka/page_list.html:6 templates/wakawaka/page_list.html:10
+msgid "All wiki pages"
+msgstr ""
+
+#: templates/wakawaka/revision_list.html:6
+#: templates/wakawaka/revision_list.html:10
+msgid "List of all revisions"
+msgstr ""
+
+#: templates/wakawaka/revision_list.html:14
+msgid "Page"
+msgstr ""
+
+#: templates/wakawaka/revision_list.html:15
+#: templates/wakawaka/revision_table.html:7
+msgid "Changed"
+msgstr ""
+
+#: templates/wakawaka/revision_list.html:16
+#: templates/wakawaka/revision_table.html:8
+msgid "Message"
+msgstr ""
+
+#: templates/wakawaka/revision_list.html:17
+#: templates/wakawaka/revision_table.html:9
+msgid "Modified by"
+msgstr ""
+
+#: templates/wakawaka/revision_list.html:27
+#: templates/wakawaka/revision_table.html:38
+msgid "View"
+msgstr ""
+
+#: templates/wakawaka/revision_list.html:29
+#: templates/wakawaka/revision_table.html:39
+msgid "Revert"
+msgstr ""
+
+#: templates/wakawaka/revision_table.html:6
+msgid "Compare"
+msgstr ""
+
+#: templates/wakawaka/revision_table.html:45
+msgid "Compare revisions"
+msgstr ""
+
+#: templates/wakawaka/revisions.html:6 templates/wakawaka/revisions.html:10
+#, python-format
+msgid "History for %(slug)s"
+msgstr ""
