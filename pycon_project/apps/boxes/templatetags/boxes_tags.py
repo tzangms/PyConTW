@@ -5,6 +5,7 @@ from django.utils.safestring import mark_safe
 from django.utils.encoding import smart_str
 from django.utils.translation import ugettext_lazy as _
 from django.template.defaulttags import kwarg_re
+from django.utils import translation
 
 from boxes.models import Box
 from boxes.authorization import load_can_edit
@@ -59,12 +60,13 @@ class BoxNode(template.Node):
         show_edit_link = load_can_edit()(request, *args, **kwargs)
         
         try:
-            box = Box.objects.get(label=label)
+            language_code = translation.get_language()
+            box = Box.objects.get(label=label, language_code=language_code.lower())
             content = box.render().strip()
         except Box.DoesNotExist:
             box = None
             content = ""
-        
+
         # @@@ encode args/kwargs into querystring
         if show_edit_link:
             if box is None:

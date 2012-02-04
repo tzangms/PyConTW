@@ -12,7 +12,8 @@ class Box(models.Model):
     
     label = models.CharField(max_length=100, db_index=True)
     content = MarkupField()
-    
+    language_code = models.CharField(max_length=5)
+
     created_by = models.ForeignKey(User, related_name="boxes")
     last_updated_by = models.ForeignKey(User, related_name="updated_boxes")
     
@@ -21,6 +22,7 @@ class Box(models.Model):
     
     class Meta:
         verbose_name_plural = "boxes"
+        unique_together = ('label', 'language_code')
     
     def render(self):
         """
