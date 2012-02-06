@@ -184,7 +184,7 @@ FIXTURE_DIRS = [
 
 MESSAGE_STORAGE = "django.contrib.messages.storage.session.SessionStorage"
 
-CONTACT_EMAIL = "pycon-organizers@python.org"
+CONTACT_EMAIL = "organizers@pycon.tw"
 SITE_NAME = "PyCon 2012 Santa Clara - A Conference for the Python Community"
 
 DEBUG_TOOLBAR_CONFIG = {

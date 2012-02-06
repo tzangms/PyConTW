@@ -1,9 +1,5 @@
 {% extends "site_base.html" %}
-
-{% load boxes_tags %}
-{% load biblion_tags %}
-{% load sponsors_pro_tags %}
-{% load thumbnail %}
+{% load boxes_tags biblion_tags sponsors_pro_tags thumbnail i18n %}
 
 {% block body_class %}home{% endblock %}
 
@@ -13,6 +9,7 @@
 
 {% block header_extra_base %}
     <div id="python"></div>
+    {% comment %}
     <div class="dates">
         <div class="tutorials">
             <h4>Tutorials: March 7th&ndash;8th</h4>
@@ -36,6 +33,7 @@
         </a>
         {% endfor %}
     </div>
+    {% endcomment %}
 {% endblock %}
 
 {% block body %}
@@ -44,12 +42,16 @@
     <div class="mainbox">
         {% box "mainbox" %}
     </div>
+
     {#  SECTION: our platinum and gold sponsors #}
+    {% comment %}
     <div class="span-24 last">
         <h1 class="hidden">Our Platinum and Gold Sponsors</h1>
         {% include "_sponsors.html" %}
-        <p class="spacer learn-more"><a href="{% url sponsor_info %}">Learn how to become a sponsor...</a></p>
+        <p class="spacer learn-more"><a href="{% url sponsor_info %}">{% trans "Learn how to become a sponsor" %}...</a></p>
     </div>
+    {% endcomment %}
+
     {#  SECTION: what is pycon #}
     <div class="span-8">
         <h1 class="section-title">What is <span>PyCon</span>?</h1>
@@ -58,6 +60,7 @@
         {% box "homepage_main" %}
         <p class="learn-more"><a href="{% url wakawaka_page 'about' %}">Learn more...</a></p>
     </div>
+
     {#  SECTION: blog #}
     <div class="span-8">
         <h1 class="section-title"><span>Announcements</span></h1>

@@ -392,11 +392,11 @@ header h1#logo {
 }
 header h1#logo a {
   display: block;
-  width: 276px;
+  width: 230px;
   height: 90px;
-  background: url(../img/pycon_2012_sm.png) no-repeat 0 0;
+  margin-top: 25px;
+  background: url(../img/pycon_2012.png) no-repeat 0 0;
   float: left;
-  padding-bottom: 12px;
   color:#fff;
   text-decoration:none;
   font-size:123.1%;
@@ -772,7 +772,7 @@ a.btn:hover {
 /**************************************************************************** page specific styles */
 /** homepage ** */
 body.home header {
-  height: 388px;
+  height: 288px;
 }
 
 body.home header .container {
@@ -797,7 +797,7 @@ body.home header h2#slogan {
   left:335px;
   width: 329px;
   height: 31px;
-  background: url(../img/santa_clara.png) no-repeat 0 0;
+  /* background: url(../img/santa_clara.png) no-repeat 0 0; */
   text-indent:-9999px;
 }
 

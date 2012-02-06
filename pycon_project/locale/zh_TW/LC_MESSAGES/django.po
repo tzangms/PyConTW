@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-02-04 20:20+0800\n"
+"POT-Creation-Date: 2012-02-06 00:45+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,11 +23,11 @@ msgstr ""
 msgid "Successfully logged in as %(user)s."
 msgstr ""
 
-#: apps/boxes/templatetags/boxes_tags.py:72
+#: apps/boxes/templatetags/boxes_tags.py:74
 msgid "Create"
 msgstr ""
 
-#: apps/boxes/templatetags/boxes_tags.py:75 templates/wakawaka/page.html:53
+#: apps/boxes/templatetags/boxes_tags.py:77 templates/wakawaka/page.html:53
 msgid "Edit"
 msgstr ""
 
@@ -133,15 +133,11 @@ msgstr "地點"
 
 #: templates/_nav.html:14
 msgid "Sponsors"
-msgstr ""
-
-#: templates/_nav.html:15
-msgid "Jobs Fair"
-msgstr ""
+msgstr "贊助商"
 
 #: templates/_nav.html:16
 msgid "Blog"
-msgstr ""
+msgstr "部落格"
 
 #: templates/base.html:31
 msgid "clear"
@@ -149,11 +145,11 @@ msgstr ""
 
 #: templates/account/_openid_login.html:23 templates/account/login.html:42
 msgid "Log in &raquo;"
-msgstr ""
+msgstr "登入 &raquo;"
 
 #: templates/account/base.html:14 templates/account/email.html:6
 msgid "Account"
-msgstr ""
+msgstr "帳號"
 
 #: templates/account/base.html:19 templates/account/email.html:9
 msgid "Email Addresses"
@@ -168,7 +164,7 @@ msgstr ""
 #: templates/account/password_reset_from_key.html:5
 #: templates/account/password_reset_from_key.html:8
 msgid "Change Password"
-msgstr ""
+msgstr "更改密碼"
 
 #: templates/account/base.html:24 templates/account/password_set.html:6
 #: templates/account/password_set.html:9
@@ -183,7 +179,7 @@ msgstr ""
 #: templates/account/base.html:32 templates/account/timezone_change.html:6
 #: templates/account/timezone_change.html:9
 msgid "Timezone"
-msgstr ""
+msgstr "時區"
 
 #: templates/account/email.html:18
 msgid "verified"
@@ -521,6 +517,10 @@ msgid ""
 "the <a href=\"%(terms_url)s\">Terms of Use</a> and <a href=\"%(privacy_url)s"
 "\">Privacy Policy</a>."
 msgstr ""
+
+#: templates/speakers/base.html:8
+msgid "Speaker <span>Information</span>"
+msgstr "講者 <span>資訊</span>"
 
 #: templates/wakawaka/changes.html:18
 #, python-format

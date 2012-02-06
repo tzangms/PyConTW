@@ -2,7 +2,6 @@ from django.contrib import admin
 
 from symposion.sponsors_pro.models import SponsorLevel, Sponsor, Benefit, BenefitLevel, SponsorBenefit
 
-
 class BenefitLevelInline(admin.TabularInline):
     model = BenefitLevel
     extra = 0
@@ -60,6 +59,7 @@ class BenefitAdmin(admin.ModelAdmin):
 
 
 class SponsorLevelAdmin(admin.ModelAdmin):
+    list_display = ('name', 'order', 'cost')
     
     inlines = [BenefitLevelInline]
 
