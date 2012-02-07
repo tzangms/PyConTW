@@ -611,7 +611,7 @@ body.sponsorship nav#main-nav ul li a#link-sponsors,
 body.blog nav#main-nav ul li a#link-blog,
 body.speaker nav#main-nav ul li a#link-speakers,
 body.jobs nav#main-nav ul li a#link-jobs {
-  background: url(../img/main_nav_over.png) no-repeat center center;
+  /* background: url(../img/main_nav_over.png) no-repeat center center; */
   color: #006e91;
   cursor: pointer;
 }
@@ -805,7 +805,7 @@ body.home #python {
   position:absolute;
   top:30px;
   left:8px;
-  background: url(../img/snake.png) no-repeat 0 0;
+  /* background: url(../img/snake.png) no-repeat 0 0; */
   width:158px;
   height:217px;
 }
