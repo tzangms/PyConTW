@@ -1,7 +1,8 @@
 from django.conf import settings
 from django.core.exceptions import ObjectDoesNotExist
 from django.db.models import Q
-from django.http import Http404, HttpResponse
+from django.http import Http404
+from django.utils.translation import ugettext as _
 from django.shortcuts import render_to_response, redirect, get_object_or_404
 from django.template import RequestContext
 
@@ -24,9 +25,9 @@ def speaker_dashboard(request):
                 Q(additional_speakers=request.user.speaker_profile)
             ).distinct()
             if proposals.count():
-                ctx["proposal_text"] = "submit another talk proposal"
+                ctx["proposal_text"] = _("submit another talk proposal")
             else:
-                ctx["proposal_text"] = "submit a talk proposal"
+                ctx["proposal_text"] = _("submit a talk proposal")
             ctx["proposals"] = proposals
             template_name = "dashboard_auth_speaker.html"
         else:

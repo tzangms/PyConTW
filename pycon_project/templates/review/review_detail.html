@@ -1,4 +1,4 @@
-{% extends "reviews/base.html" %}
+{% extends "review/base.html" %}
 
 {% load uni_form_tags %}
 
@@ -26,6 +26,28 @@
         .review-box .dateline {
             margin-left: 80px;
             font-size: 10pt;
+            overflow: auto;
+        }
+        .review-box .dateline form {
+            border: none;
+            float: right;
+        }
+        .vote-count-box .label, .vote-count-box .number {
+            float: left;
+            margin: 10px;
+            overflow: auto;
+        }
+        .vote-count-box .label {
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            padding: 0px 5px;
+        }
+        .vote-count-box .number {
+            border-right: 1px solid #ccc;
+            padding: 0px 10px;
+            background: #ccc;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
         }
         .plus-one .vote-count-box.plus-one-box .label,
         .plus-zero .vote-count-box.plus-zero-box .label,
@@ -42,6 +64,9 @@
             font-weight: bold;
             float: right;
             font-size: 16pt;
+            border: 4px solid #fff;
+            padding: 10px;
+            -webkit-border-radius: 5px;
         }
         .result.accepted {
             color: #0C0;
@@ -100,7 +125,6 @@
             {% endif %}
         </div>
         
-        <div class="clear"></div>
         
         <p>
             {% if proposal.cancelled %}
@@ -176,7 +200,7 @@
         {% for review in reviews %}
             <div class="review-box">
                 <div class="vote">{{ review.vote }}</div>
-                <div class="comment">{{ review.comment_html|safe }}</div>
+                <div class="comment">{{ review.comment|safe }}</div>
                 <div class="dateline">
                     <b>{{ review.user }}</b> {{ review.submitted_at|timesince }} ago
                     {% if is_reviewer_admin %}<form method="POST" action="{% url review_delete review.pk %}">{% csrf_token %}<input type="submit" value="delete" /></form>{% endif %}
@@ -184,7 +208,7 @@
             </div>
             <div class="clear"></div>
         {% endfor %}
-        
+
         <h3>Vote and Comment</h3>
         
         <p>You can revise your vote or comment multiple times with an existing vote.</p>
@@ -203,7 +227,7 @@
         
         {% for message in proposal.messages.all %}
             <div class="review-box">
-                <div class="comment">{{ message.message_html|safe }}</div>
+                <div class="comment">{{ message.message|safe }}</div>
                 <div class="dateline"><b>{{ message.user }}</b> {{ message.submitted_at|timesince }} ago</div>
             </div>
             <div class="clear"></div>

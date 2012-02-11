@@ -1,23 +1,22 @@
 {% extends "speakers/base.html" %}
-
-{% load boxes_tags %}
+{% load boxes_tags i18n %}
 
 {% block content %}
     
     {% if accepting_proposals %}
         <p>{% box "talk-proposals" %}</p>
         
-        <h3>To submit a talk:</h3>
+        <h3>{% trans "To submit a talk" %}:</h3>
         
         <ol class="steps">
-            <li class="done first">sign up and log in</li>
-            <li class="next second"><a href="{% url speaker_create %}">create a speaker profile</a></li>
-            <li class="third">submit one or more proposals</li>
+            <li class="done first">{% trans "sign up and log in" %}</li>
+            <li class="next second"><a href="{% url speaker_create %}">{% trans "create a speaker profile" %}</a></li>
+            <li class="third">{% trans "submit one or more proposals" %}</li>
         </ol>
         
-        <p>You will be able to come back and revise your submission until the deadline.
-            Remember that speakers must register and pay to attend the conference.</p>
+        <p>{% blocktrans %}You will be able to come back and revise your submission until the deadline.
+            Remember that speakers must register and pay to attend the conference.{% endblocktrans %}</p>
     {% else %}
-        <p>Talk submissions are now closed and the <a href="{% url schedule_list %}">schedule has been announced</a>.</p>
+        <p>{% trans "Talk submissions are now closed" %} and the <a href="{% url schedule_list %}">{% trans "schedule has been announced" %}</a>.</p>
     {% endif %}
 {% endblock %}

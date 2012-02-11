@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-02-06 00:45+0800\n"
+"POT-Creation-Date: 2012-02-11 18:06+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,23 +21,175 @@ msgstr ""
 #: apps/oauth_callbacks.py:108
 #, python-format
 msgid "Successfully logged in as %(user)s."
-msgstr ""
+msgstr "成功登入為 %(user)s。"
 
 #: apps/boxes/templatetags/boxes_tags.py:74
 msgid "Create"
+msgstr "建立"
+
+#: apps/boxes/templatetags/boxes_tags.py:77
+#: templates/speakers/dashboard_auth_speaker.html:63
+#: templates/wakawaka/page.html:53
+msgid "Edit"
+msgstr "編輯"
+
+#: symposion/proposals/models.py:18
+msgid "Novice"
+msgstr "新手"
+
+#: symposion/proposals/models.py:19
+msgid "Intermediate"
+msgstr "中級"
+
+#: symposion/proposals/models.py:20
+msgid "Experienced"
+msgstr "進階"
+
+#: symposion/proposals/models.py:24
+msgid "No preference"
+msgstr "沒有偏好"
+
+#: symposion/proposals/models.py:25
+msgid "I prefer a 30 minute slot"
+msgstr "我偏好 30 分鐘"
+
+#: symposion/proposals/models.py:26
+msgid "I prefer a 45 minute slot"
+msgstr "我偏好 45 分鐘"
+
+#: symposion/proposals/models.py:29
+#: templates/speakers/dashboard_auth_speaker.html:31
+msgid "Title"
+msgstr "名稱"
+
+#: symposion/proposals/models.py:31
+msgid "Description"
+msgstr "敘述"
+
+#: symposion/proposals/models.py:33
+msgid ""
+"If your talk is accepted this will be made public and printed in the "
+"program. Should be one paragraph, maximum 400 characters."
 msgstr ""
 
-#: apps/boxes/templatetags/boxes_tags.py:77 templates/wakawaka/page.html:53
-msgid "Edit"
+#: symposion/proposals/models.py:35
+msgid "Kind"
 msgstr ""
+
+#: symposion/proposals/models.py:36
+msgid "Category"
+msgstr ""
+
+#: symposion/proposals/models.py:38
+msgid "Abstract"
+msgstr ""
+
+#: symposion/proposals/models.py:39
+#, fuzzy
+msgid ""
+"Detailed description and outline. Will be made public if your talk is "
+"accepted. Edit using <a href='http://warpedvisions.org/projects/markdown-"
+"cheat-sheet/' target='_blank'>Markdown</a>."
+msgstr ""
+"關於你。 使用 Markdown <a href='http://warpedvisions.org/projects/markdown-"
+"cheat-sheet/' target='_blank'>編輯</a>。"
+
+#: symposion/proposals/models.py:41
+#: templates/speakers/dashboard_auth_speaker.html:33
+msgid "Audience level"
+msgstr "聽眾程度"
+
+#: symposion/proposals/models.py:43
+msgid "Additional notes"
+msgstr ""
+
+#: symposion/proposals/models.py:45
+#, fuzzy
+msgid ""
+"Anything else you'd like the program committee to know when making their "
+"selection: your past speaking experience, open source community experience, "
+"etc. Edit using <a href='http://warpedvisions.org/projects/markdown-cheat-"
+"sheet/' target='_blank'>Markdown</a>."
+msgstr ""
+"關於你。 使用 Markdown <a href='http://warpedvisions.org/projects/markdown-"
+"cheat-sheet/' target='_blank'>編輯</a>。"
+
+#: symposion/proposals/models.py:48
+msgid "Extreme"
+msgstr ""
+
+#: symposion/proposals/models.py:50
+msgid ""
+"'Extreme' talks are advanced talks with little or no introductory material. "
+"See <a href='http://us.pycon.org/2012/speaker/extreme/' "
+"target='_blank'>http://us.pycon.org/2012/speaker/extreme/</a> for details."
+msgstr ""
+
+#: symposion/proposals/models.py:52
+msgid "Duration"
+msgstr "長度"
+
+#: symposion/speakers/forms.py:18 symposion/speakers/models.py:37
+msgid "Sessions preference"
+msgstr "議程偏好"
+
+#: symposion/speakers/forms.py:22 symposion/speakers/models.py:41
+msgid ""
+"If you've submitted multiple proposals, please let us know if you only want "
+"to give one or if you'd like to give two talks."
+msgstr "如果你已經提交多個提案, 請讓我們知道你只想進行一場或兩場演講。"
+
+#: symposion/speakers/models.py:15
+msgid "One session"
+msgstr "一場"
+
+#: symposion/speakers/models.py:16
+msgid "Two session"
+msgstr "兩場"
+
+#: symposion/speakers/models.py:20
+msgid "Name"
+msgstr "名稱"
+
+#: symposion/speakers/models.py:21
+msgid "Biography"
+msgstr "自我介紹"
+
+#: symposion/speakers/models.py:21
+msgid ""
+"A little bit about you. Edit using <a href='http://warpedvisions.org/"
+"projects/markdown-cheat-sheet/' target='_blank'>Markdown</a>."
+msgstr ""
+"關於你。 使用 Markdown <a href='http://warpedvisions.org/projects/markdown-"
+"cheat-sheet/' target='_blank'>編輯</a>。"
+
+#: symposion/speakers/models.py:22
+msgid "Photo"
+msgstr "相片"
+
+#: symposion/speakers/models.py:24
+msgid "Twitter username"
+msgstr "twitter 帳號"
+
+#: symposion/speakers/models.py:27
+msgid "Your Twitter account, with or without the @"
+msgstr "你的 twitter 帳號"
+
+#: symposion/speakers/views.py:28
+msgid "submit another talk proposal"
+msgstr "提交其他演講提案"
+
+#: symposion/speakers/views.py:30
+msgid "submit a talk proposal"
+msgstr "提交演講提案"
 
 #: symposion/sponsors_pro/models.py:18 symposion/sponsors_pro/models.py:164
 msgid "name"
-msgstr ""
+msgstr "名稱"
 
 #: symposion/sponsors_pro/models.py:19
 msgid "order"
-msgstr ""
+msgstr "順序"
 
 #: symposion/sponsors_pro/models.py:20
 msgid "cost"
@@ -45,7 +197,7 @@ msgstr ""
 
 #: symposion/sponsors_pro/models.py:21 symposion/sponsors_pro/models.py:165
 msgid "description"
-msgstr ""
+msgstr "敘述"
 
 #: symposion/sponsors_pro/models.py:21
 msgid "This is private."
@@ -57,11 +209,11 @@ msgstr ""
 
 #: symposion/sponsors_pro/models.py:35
 msgid "sponsor name"
-msgstr ""
+msgstr "贊助商名稱"
 
 #: symposion/sponsors_pro/models.py:36
 msgid "external URL"
-msgstr ""
+msgstr "贊助商網址"
 
 #: symposion/sponsors_pro/models.py:37
 msgid "annotation"
@@ -69,11 +221,11 @@ msgstr ""
 
 #: symposion/sponsors_pro/models.py:38
 msgid "contact name"
-msgstr ""
+msgstr "聯絡名稱"
 
 #: symposion/sponsors_pro/models.py:39
 msgid "Contact email"
-msgstr ""
+msgstr "聯絡電子郵件"
 
 #: symposion/sponsors_pro/models.py:40 symposion/sponsors_pro/models.py:192
 msgid "level"
@@ -89,11 +241,11 @@ msgstr ""
 
 #: symposion/sponsors_pro/models.py:167
 msgid "type"
-msgstr ""
+msgstr "類型"
 
 #: symposion/sponsors_pro/models.py:187 symposion/sponsors_pro/models.py:213
 msgid "benefit"
-msgstr ""
+msgstr "好處"
 
 #: symposion/sponsors_pro/models.py:194 symposion/sponsors_pro/models.py:218
 msgid "max words"
@@ -105,15 +257,40 @@ msgstr ""
 
 #: symposion/sponsors_pro/models.py:209
 msgid "sponsor"
-msgstr ""
+msgstr "贊助商"
 
 #: symposion/sponsors_pro/models.py:223
 msgid "text"
-msgstr ""
+msgstr "文字"
 
 #: symposion/sponsors_pro/models.py:224
 msgid "file"
-msgstr ""
+msgstr "檔案"
+
+#: templates/_account_bar.html:7 templates/account/base.html:14
+#: templates/account/email.html:6
+msgid "Account"
+msgstr "帳號"
+
+#: templates/_account_bar.html:10
+msgid "Manage Sponsorship"
+msgstr "管理贊助"
+
+#: templates/_account_bar.html:14
+msgid "Proposal Review"
+msgstr "提案審核"
+
+#: templates/_account_bar.html:18
+msgid "Edit Content"
+msgstr "編輯內容"
+
+#: templates/_account_bar.html:23
+msgid "Log in"
+msgstr "登入"
+
+#: templates/_account_bar.html:23 templates/account/signup.html:11
+msgid "Sign Up"
+msgstr "註冊"
 
 #: templates/_nav.html:4
 msgid "About"
@@ -147,17 +324,13 @@ msgstr ""
 msgid "Log in &raquo;"
 msgstr "登入 &raquo;"
 
-#: templates/account/base.html:14 templates/account/email.html:6
-msgid "Account"
-msgstr "帳號"
-
 #: templates/account/base.html:19 templates/account/email.html:9
 msgid "Email Addresses"
-msgstr ""
+msgstr "電子郵件"
 
 #: templates/account/base.html:20 templates/django_openid/associations.html:5
 msgid "OpenID Associations"
-msgstr ""
+msgstr "OpenID 關連"
 
 #: templates/account/base.html:22 templates/account/password_change.html:5
 #: templates/account/password_change.html:8
@@ -169,12 +342,12 @@ msgstr "更改密碼"
 #: templates/account/base.html:24 templates/account/password_set.html:6
 #: templates/account/password_set.html:9
 msgid "Set Password"
-msgstr ""
+msgstr "設定密碼"
 
 #: templates/account/base.html:28 templates/account/password_delete.html:5
 #: templates/account/password_delete.html:8
 msgid "Delete Password"
-msgstr ""
+msgstr "刪除密碼"
 
 #: templates/account/base.html:32 templates/account/timezone_change.html:6
 #: templates/account/timezone_change.html:9
@@ -183,27 +356,27 @@ msgstr "時區"
 
 #: templates/account/email.html:18
 msgid "verified"
-msgstr ""
+msgstr "已驗證"
 
 #: templates/account/email.html:20
 msgid "primary"
-msgstr ""
+msgstr "主要"
 
 #: templates/account/email.html:28
 msgid "make primary"
-msgstr ""
+msgstr "設為主要"
 
 #: templates/account/email.html:33
 msgid "unverified"
-msgstr ""
+msgstr "未驗證"
 
 #: templates/account/email.html:40
 msgid "re-send verification email"
-msgstr ""
+msgstr "重新發送驗證信件"
 
 #: templates/account/email.html:51
 msgid "remove"
-msgstr ""
+msgstr "移除"
 
 #: templates/account/email.html:58
 msgid "None"
@@ -213,60 +386,60 @@ msgstr ""
 msgid ""
 "You should really add one so you can receive notifications, reset your "
 "password if you forget it, etc."
-msgstr ""
+msgstr "你應該新增一個電子郵件這樣才能接收通知, 或者是用來你的重設密碼。"
 
 #: templates/account/email.html:62
 msgid "Add Email Address"
-msgstr ""
+msgstr "新增電子郵件"
 
 #: templates/account/email.html:70
 msgid "add"
-msgstr ""
+msgstr "新增"
 
 #: templates/account/language_change.html:6
 #: templates/account/language_change.html:9
 msgid "Language"
-msgstr ""
+msgstr "語言"
 
 #: templates/account/language_change.html:11
 msgid "This site can be used in your preferred language."
-msgstr ""
+msgstr "這個網站可以使用你偏好的語言。"
 
 #: templates/account/language_change.html:18
 msgid "Change my language"
-msgstr ""
+msgstr "更改我的語言"
 
 #: templates/account/login.html:8
 msgid "Login"
-msgstr ""
+msgstr "登入"
 
 #: templates/account/login.html:13 templates/account/signup.html:13
 msgid "Log In"
-msgstr ""
+msgstr "登入"
 
 #: templates/account/login.html:17 templates/account/password_reset.html:12
 #: templates/account/password_reset_done.html:12
 msgid "Note"
-msgstr ""
+msgstr "注意"
 
 #: templates/account/login.html:17 templates/account/password_reset.html:12
 #: templates/account/password_reset_done.html:12
 #, python-format
 msgid "you are already logged in as %(user_display)s."
-msgstr ""
+msgstr "你已經登入為 %(user_display)s。"
 
 #: templates/account/login.html:21
 #, python-format
 msgid "Don't have an account? <a href=\"%(signup_url)s\">Sign up</a>!"
-msgstr ""
+msgstr "沒有帳號嗎? <a href=\"%(signup_url)s\">註冊</a>!"
 
 #: templates/account/login.html:35
 msgid "Forgot password?"
-msgstr ""
+msgstr "忘記密碼?"
 
 #: templates/account/login.html:47
 msgid "Or sign in with your OpenID"
-msgstr ""
+msgstr "或者使用 OpenID 進行註冊"
 
 #: templates/account/login.html:57
 #, python-format
@@ -274,54 +447,58 @@ msgid ""
 "If you have any trouble logging in to your account, contact us at <a href="
 "\"mailto:%(CONTACT_EMAIL)s\">%(CONTACT_EMAIL)s</a>."
 msgstr ""
+"如果你在登入碰到任何問題, 請透過 <a href=\"mailto:%(CONTACT_EMAIL)s\">"
+"%(CONTACT_EMAIL)s</a> 聯絡我們"
 
 #: templates/account/logout.html:5
 msgid "Logout"
-msgstr ""
+msgstr "登出"
 
 #: templates/account/logout.html:8
 msgid "You've been logged out."
-msgstr ""
+msgstr "你已經登出。"
 
 #: templates/account/password_change.html:15
 #: templates/account/password_reset_from_key.html:20
 msgid "change password"
-msgstr ""
+msgstr "更改密碼"
 
 #: templates/account/password_delete.html:9
 msgid ""
 "You may delete your password since you are currently logged in using OpenID."
-msgstr ""
+msgstr "因為你已經使用 OpenID 登入, 你可以刪除你的密碼。"
 
 #: templates/account/password_delete.html:12
 msgid "delete my password"
-msgstr ""
+msgstr "刪除我的密碼"
 
 #: templates/account/password_delete_done.html:5
 #: templates/account/password_delete_done.html:8
 msgid "Password Deleted"
-msgstr ""
+msgstr "密碼已經刪除"
 
 #: templates/account/password_delete_done.html:9
 msgid "Your password has been deleted."
-msgstr ""
+msgstr "你的密碼已經刪除。"
 
 #: templates/account/password_reset.html:7
 #: templates/account/password_reset.html:9
 #: templates/account/password_reset_done.html:6
 #: templates/account/password_reset_done.html:8
 msgid "Password Reset"
-msgstr ""
+msgstr "重設密碼"
 
 #: templates/account/password_reset.html:17
 msgid ""
 "Forgotten your password? Enter your email address below, and we'll send you "
 "an email allowing you to reset it."
 msgstr ""
+"忘記你的密碼嗎? 在下方輸入你的電子郵件, 我們將會發送給你一封信件, 讓你可以重"
+"設你的密碼。"
 
 #: templates/account/password_reset.html:24
 msgid "Reset my password"
-msgstr ""
+msgstr "重設我的密碼"
 
 #: templates/account/password_reset.html:29
 #, python-format
@@ -336,6 +513,8 @@ msgid ""
 "We have sent you an email. If you do not receive it within a few minutes, "
 "contact us at <a href=\"mailto:%(CONTACT_EMAIL)s\">%(CONTACT_EMAIL)s</a>."
 msgstr ""
+"我們已經寄送給你一封信件。 如果你沒有在幾分鐘內收到, 請透過 <a href=\"mailto:"
+"%(CONTACT_EMAIL)s\">%(CONTACT_EMAIL)s</a> 聯絡我們。"
 
 #: templates/account/password_reset_from_key.html:8
 msgid "Bad Token"
@@ -351,28 +530,24 @@ msgstr ""
 
 #: templates/account/password_set.html:16
 msgid "set password"
-msgstr ""
+msgstr "設定密碼"
 
 #: templates/account/signup.html:6
 msgid "Signup"
-msgstr ""
-
-#: templates/account/signup.html:11
-msgid "Sign Up"
-msgstr ""
+msgstr "註冊"
 
 #: templates/account/signup.html:13
 msgid "Already have an account?"
-msgstr ""
+msgstr "已經有帳號了嗎?"
 
 #: templates/account/signup.html:18
 msgid "You are already logged in."
-msgstr ""
+msgstr "你已經登入。"
 
 #: templates/account/signup.html:29 templates/django_openid/register.html:18
 #: templates/oauth_access/finish_signup.html:19
 msgid "Sign Up &raquo;"
-msgstr ""
+msgstr "註冊 &raquo;"
 
 #: templates/account/signup.html:43 templates/django_openid/register.html:26
 #: templates/oauth_access/finish_signup.html:28
@@ -381,6 +556,8 @@ msgid ""
 "If you have any trouble creating your account, contact us at <a href="
 "\"mailto:%(CONTACT_EMAIL)s\">%(CONTACT_EMAIL)s</a>."
 msgstr ""
+"如果你在註冊帳號碰到任何問題, 請透過 <a href=\"mailto:%(CONTACT_EMAIL)s\">"
+"%(CONTACT_EMAIL)s</a> 聯絡我們。"
 
 #: templates/account/timezone_change.html:11
 msgid ""
@@ -390,12 +567,12 @@ msgstr ""
 
 #: templates/account/timezone_change.html:18
 msgid "Change my timezone"
-msgstr ""
+msgstr "更改我的時區"
 
 #: templates/account/verification_sent.html:5
 #: templates/account/verification_sent.html:8
 msgid "Verify your email address"
-msgstr ""
+msgstr "驗證你的電子郵件"
 
 #: templates/account/verification_sent.html:10
 #, python-format
@@ -409,7 +586,7 @@ msgstr ""
 #: templates/django_openid/already_logged_in.html:5
 #: templates/django_openid/already_logged_in.html:8
 msgid "Already logged in"
-msgstr ""
+msgstr "已經登入"
 
 #: templates/django_openid/already_logged_in.html:11
 #, python-format
@@ -422,11 +599,11 @@ msgstr ""
 #: templates/django_openid/associate.html:6
 #: templates/django_openid/associate.html:9
 msgid "Verify this Association"
-msgstr ""
+msgstr "驗證這個關連"
 
 #: templates/django_openid/associations.html:8
 msgid "Manage OpenID Associations"
-msgstr ""
+msgstr "管理 OpenID 關連"
 
 #: templates/django_openid/associations.html:13
 #, python-format
@@ -444,7 +621,7 @@ msgstr ""
 
 #: templates/django_openid/associations.html:26
 msgid "Remove association"
-msgstr ""
+msgstr "移除關連"
 
 #: templates/django_openid/associations.html:32
 msgid "To associate a new OpenID with this account, sign in with it here:"
@@ -457,7 +634,7 @@ msgstr ""
 #: templates/django_openid/register.html:6
 #: templates/django_openid/register.html:9
 msgid "Choose a Username"
-msgstr ""
+msgstr "選擇一個帳號"
 
 #: templates/django_openid/register.html:11
 msgid ""
@@ -475,7 +652,7 @@ msgstr ""
 #: templates/django_openid/registration_closed.html:5
 #: templates/django_openid/registration_closed.html:8
 msgid "Signup closed"
-msgstr ""
+msgstr "註冊已經關閉"
 
 #: templates/django_openid/registration_closed.html:10
 msgid ""
@@ -485,11 +662,11 @@ msgstr ""
 
 #: templates/emailconfirmation/confirm_email.html:7
 msgid "Confirm Email"
-msgstr ""
+msgstr "確認電子郵件"
 
 #: templates/emailconfirmation/confirm_email.html:11
 msgid "Email Confirmed"
-msgstr ""
+msgstr "電子郵件已經確認"
 
 #: templates/emailconfirmation/confirm_email.html:13
 #, python-format
@@ -500,15 +677,15 @@ msgstr ""
 
 #: templates/emailconfirmation/confirm_email.html:16
 msgid "Invalid confirmation key."
-msgstr ""
+msgstr "錯誤的確認金鑰。"
 
 #: templates/oauth_access/finish_signup.html:6
 msgid "Finish Signup"
-msgstr ""
+msgstr "完成註冊"
 
 #: templates/oauth_access/finish_signup.html:9
 msgid "Finish Sign Up"
-msgstr ""
+msgstr "完成註冊"
 
 #: templates/oauth_access/finish_signup.html:26
 #, python-format
@@ -518,9 +695,139 @@ msgid ""
 "\">Privacy Policy</a>."
 msgstr ""
 
+#: templates/proposals/proposal_submit.html:28
+#, fuzzy
+msgid "Submit A Proposal"
+msgstr "提交演講提案"
+
+#: templates/proposals/proposal_submit.html:39
+msgid ""
+"You will be able to edit your proposal after it has been submitted. The "
+"program committee may ask questions, provide feedback, and even suggest "
+"changes to your proposal as part of the review processes."
+msgstr ""
+
 #: templates/speakers/base.html:8
 msgid "Speaker <span>Information</span>"
 msgstr "講者 <span>資訊</span>"
+
+#: templates/speakers/dashboard_auth_nospeaker.html:9
+#: templates/speakers/dashboard_auth_speaker.html:9
+#: templates/speakers/dashboard_noauth.html:9
+msgid "To submit a talk"
+msgstr "提交演講"
+
+#: templates/speakers/dashboard_auth_nospeaker.html:12
+#: templates/speakers/dashboard_auth_speaker.html:12
+msgid "sign up and log in"
+msgstr "註冊並登入"
+
+#: templates/speakers/dashboard_auth_nospeaker.html:13
+#: templates/speakers/dashboard_auth_speaker.html:13
+#: templates/speakers/dashboard_noauth.html:13
+msgid "create a speaker profile"
+msgstr "建立講者資訊"
+
+#: templates/speakers/dashboard_auth_nospeaker.html:14
+#: templates/speakers/dashboard_noauth.html:14
+msgid "submit one or more proposals"
+msgstr "提交一個或多個演講提案"
+
+#: templates/speakers/dashboard_auth_nospeaker.html:17
+#: templates/speakers/dashboard_auth_speaker.html:19
+msgid ""
+"You will be able to come back and revise your submission until the "
+"deadline.\n"
+"            Remember that speakers must register and pay to attend the "
+"conference."
+msgstr ""
+"你可以在截止期限之前回來並重新審視你的提案。\n"
+" 記住, 講者仍必須註冊並繳交費用才能參加會議。"
+
+#: templates/speakers/dashboard_auth_nospeaker.html:20
+#: templates/speakers/dashboard_auth_speaker.html:22
+#: templates/speakers/dashboard_noauth.html:17
+msgid "Talk submissions are now closed"
+msgstr "演講提交已經關閉"
+
+#: templates/speakers/dashboard_auth_nospeaker.html:20
+#: templates/speakers/dashboard_auth_speaker.html:22
+#: templates/speakers/dashboard_noauth.html:17
+msgid "schedule has been announced"
+msgstr "議程已經發佈"
+
+#: templates/speakers/dashboard_auth_speaker.html:17
+msgid "Edit your speaker profile"
+msgstr "編輯講者資訊"
+
+#: templates/speakers/dashboard_auth_speaker.html:26
+msgid "Proposals"
+msgstr "提案"
+
+#: templates/speakers/dashboard_auth_speaker.html:32
+msgid "Session type"
+msgstr "議程類型"
+
+#: templates/speakers/dashboard_auth_speaker.html:34
+msgid "Status"
+msgstr "狀態"
+
+#: templates/speakers/dashboard_auth_speaker.html:35
+msgid "Messages"
+msgstr "訊息"
+
+#: templates/speakers/dashboard_auth_speaker.html:36
+msgid "Actions"
+msgstr "動作"
+
+#: templates/speakers/dashboard_auth_speaker.html:45
+msgid "Cancelled"
+msgstr "已取消"
+
+#: templates/speakers/dashboard_auth_speaker.html:49
+msgid "Accepted"
+msgstr "已接受"
+
+#: templates/speakers/dashboard_auth_speaker.html:51
+msgid "Submitted"
+msgstr "已送出"
+
+#: templates/speakers/dashboard_auth_speaker.html:54
+msgid "Associated"
+msgstr ""
+
+#: templates/speakers/dashboard_auth_speaker.html:64
+msgid "Add/Remove Speakers"
+msgstr "新增/移除講者"
+
+#: templates/speakers/dashboard_auth_speaker.html:73
+msgid "No proposals"
+msgstr "沒有任何提案"
+
+#: templates/speakers/dashboard_auth_speaker.html:73
+#, python-format
+msgid "You can <a href=\"%(proposal_submit_url)s\">submit one</a> now!"
+msgstr "你可以現在<a href=\"%(proposal_submit_url)s\">提交</a>你的演講提案!"
+
+#: templates/speakers/dashboard_noauth.html:12
+msgid "sign up"
+msgstr "註冊"
+
+#: templates/speakers/dashboard_noauth.html:12
+msgid "and"
+msgstr "並"
+
+#: templates/speakers/dashboard_noauth.html:12
+msgid "log in"
+msgstr "登入"
+
+#: templates/speakers/dashboard_noauth.html:20
+msgid "If you submitted a talk, you can get to the speaker dashboard by "
+msgstr ""
+
+#: templates/speakers/dashboard_noauth.html:21
+msgid "logging in"
+msgstr "登入"
 
 #: templates/wakawaka/changes.html:18
 #, python-format
@@ -560,11 +867,11 @@ msgstr ""
 
 #: templates/wakawaka/edit.html:59
 msgid "Please confirm deletion"
-msgstr ""
+msgstr "請確認刪除"
 
 #: templates/wakawaka/edit.html:63
 msgid "Delete"
-msgstr ""
+msgstr "刪除"
 
 #: templates/wakawaka/edit.html:68
 msgid "Revisions for this page"

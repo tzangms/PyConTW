@@ -1,4 +1,5 @@
 from django import forms
+from django.utils.translation import ugettext_lazy as _
 
 from django.contrib import messages
 
@@ -14,10 +15,11 @@ from symposion.speakers.models import Speaker
 class SpeakerForm(forms.ModelForm):
     
     sessions_preference = forms.ChoiceField(
+        label = _('Sessions preference'),
         widget=forms.RadioSelect(),
         choices=Speaker.SESSION_COUNT_CHOICES,
         required=False,
-        help_text="If you've submitted multiple proposals, please let us know if you only want to give one or if you'd like to give two talks."
+        help_text=_("If you've submitted multiple proposals, please let us know if you only want to give one or if you'd like to give two talks.")
     )
     
     class Meta:

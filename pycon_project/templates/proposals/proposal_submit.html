@@ -1,6 +1,7 @@
 {% extends "proposals/base.html" %}
 
 {% load boxes_tags %}
+{% load i18n %}
 {% load markitup_tags %}
 {% load uni_form_tags %}
 
@@ -24,7 +25,7 @@
 
 
 {% block content %}
-    <h1>Submit A Proposal</h1>
+    <h1>{% trans "Submit A Proposal" %}</h1>
     
     {% box "example_proposal" %}
     
@@ -35,7 +36,7 @@
             {{ form|as_uni_form }}
             <div class="form_block">
                 <p>
-                    You will be able to edit your proposal after it has been submitted. The program committee may ask questions, provide feedback, and even suggest changes to your proposal as part of the review processes.
+                    {% trans "You will be able to edit your proposal after it has been submitted. The program committee may ask questions, provide feedback, and even suggest changes to your proposal as part of the review processes." %}
                 </p>
                 <input type="submit" name="finish" value="Save" />
                 <!-- <span style="float: right; padding: 4px 6px">or</span> -->

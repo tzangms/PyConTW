@@ -266,7 +266,7 @@ def review_detail(request, pk):
         "latest_vote": latest_vote,
         "reviews": reviews,
         "review_form": review_form,
-        "message_form": message_form
+        "message_form": message_form,
     }, context_instance=RequestContext(request))
 
 

@@ -1,25 +1,24 @@
 {% extends "speakers/base.html" %}
-
-{% load boxes_tags %}
+{% load boxes_tags i18n %}
 
 {% block content %}
     
     {% if accepting_proposals %}
         <p>{% box "talk-proposals" %}</p>
         
-        <h3>To submit a talk:</h3>
+        <h3>{% trans "To submit a talk" %}:</h3>
         
         <ol class="steps">
-            <li class="next first"><a href="{% url acct_signup %}?next={{ request.path }}">sign up</a> and <a href="{% url acct_login %}?next={{ request.path }}">log in</a></li>
-            <li class="second">create a speaker profile</li>
-            <li class="third">submit one or more proposals</li>
+            <li class="next first"><a href="{% url acct_signup %}?next={{ request.path }}">{% trans "sign up" %}</a> {% trans "and" %} <a href="{% url acct_login %}?next={{ request.path }}">{% trans "log in" %}</a></li>
+            <li class="second">{% trans "create a speaker profile" %}</li>
+            <li class="third">{% trans "submit one or more proposals" %}</li>
         </ol>
     {% else %}
-        <p>Talk submissions are now closed and the <a href="{% url schedule_list %}">schedule has been announced</a>.</p>
+        <p>{% trans "Talk submissions are now closed" %} and the <a href="{% url schedule_list %}">{% trans "schedule has been announced" %}</a>.</p>
         
         <p>
-            If you submitted a talk, you can get to the speaker dashboard by 
-            <a href="{% url acct_login %}?next={{ request.path }}">logging in</a>.
+            {% trans "If you submitted a talk, you can get to the speaker dashboard by " %}
+            <a href="{% url acct_login %}?next={{ request.path }}">{% trans "logging in" %}</a>.
         </p>
     {% endif %}
 {% endblock %}

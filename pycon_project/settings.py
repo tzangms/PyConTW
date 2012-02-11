@@ -126,8 +126,7 @@ TEMPLATE_CONTEXT_PROCESSORS = [
     "django.core.context_processors.static",
     "pinax.core.context_processors.pinax_settings",
     "pinax.apps.account.context_processors.account",
-    
-    # "review.context_processors.permissions",
+    "symposion.review.context_processors.permissions",
 ]
 
 INSTALLED_APPS = [
@@ -171,6 +170,7 @@ INSTALLED_APPS = [
     "symposion.conference",
     "symposion.proposals",
     "symposion.review",
+    "symposion.schedule",
     "symposion.speakers",
     "symposion.sponsors_pro",
     
@@ -186,7 +186,7 @@ FIXTURE_DIRS = [
 MESSAGE_STORAGE = "django.contrib.messages.storage.session.SessionStorage"
 
 CONTACT_EMAIL = "organizers@pycon.tw"
-SITE_NAME = "PyCon 2012 Santa Clara - A Conference for the Python Community"
+SITE_NAME = "PyCon TW 2012 - A Conference for the Python Community"
 
 DEBUG_TOOLBAR_CONFIG = {
     "INTERCEPT_REDIRECTS": False,
