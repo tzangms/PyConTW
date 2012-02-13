@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-02-11 18:06+0800\n"
+"POT-Creation-Date: 2012-02-13 12:52+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -296,23 +296,27 @@ msgstr "註冊"
 msgid "About"
 msgstr "關於"
 
-#: templates/_nav.html:6
+#: templates/_nav.html:5
+msgid "Program"
+msgstr "議程"
+
+#: templates/_nav.html:7
 msgid "Speakers"
 msgstr "講者"
 
-#: templates/_nav.html:12
+#: templates/_nav.html:13
 msgid "Registration"
 msgstr "註冊"
 
-#: templates/_nav.html:13
+#: templates/_nav.html:14
 msgid "Venue"
 msgstr "地點"
 
-#: templates/_nav.html:14
+#: templates/_nav.html:15
 msgid "Sponsors"
 msgstr "贊助商"
 
-#: templates/_nav.html:16
+#: templates/_nav.html:17
 msgid "Blog"
 msgstr "部落格"
 
