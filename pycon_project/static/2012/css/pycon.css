@@ -611,11 +611,13 @@ body.venue nav#main-nav ul li a#link-venue,
 body.sponsorship nav#main-nav ul li a#link-sponsors,
 body.blog nav#main-nav ul li a#link-blog,
 body.speaker nav#main-nav ul li a#link-speakers,
+body.program nav#main-nav ul li a#link-program,
 body.jobs nav#main-nav ul li a#link-jobs {
   /* background: url(../img/main_nav_over.png) no-repeat center center; */
   color: #006e91;
   cursor: pointer;
 }
+
 
 /* subnav */
 nav#main-nav ul li ul {
