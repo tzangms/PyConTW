@@ -67,17 +67,15 @@
     </div>
     <div class="span-16 last spacer">
         {% latest_blog_posts as posts %}
-        {% if posts %}
-            {% for post in posts %}
-                <div class="blog-post">
-                    <h2>{{ post.title }}</h2>
-                    {% include "biblion/dateline.html" %}
-                    <div class="teaser">{{ post.teaser_html|safe }}</div>
-                </div>
-            {% endfor %}
-        {% else %}
-            <p>No blog posts have been published.</p>
-        {% endif %}
+        {% for post in posts %}
+            <div class="blog-post">
+                <h2><a href="{{ post.get_absolute_url }}">{{ post.title }}</a></h2>
+                {% include "biblion/dateline.html" %}
+                <div class="teaser">{{ post.teaser_html|safe }}</div>
+            </div>
+        {% empty %}
+        <p>No blog posts have been published.</p>
+        {% endfor %}
     </div>
     {#  SECTION: silver and media sponsors #}
     <div class="span-24 last">
