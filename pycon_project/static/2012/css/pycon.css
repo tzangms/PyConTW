@@ -376,7 +376,7 @@ pre.changes {
 /** header ** */
 header {
   position: relative;
-  height: 130px;
+  height: 170px;
 }
 
 header .container {
@@ -387,15 +387,15 @@ header .container {
 header h1#logo {
   margin: 0;
   position: absolute;
-  top: 24px;
+  top: 10px;
   left: 0;
 }
 header h1#logo a {
   display: block;
-  width: 230px;
-  height: 90px;
-  margin-top: 25px;
-  background: url(../img/pycon_2012.png) no-repeat 0 0;
+  width: 350px;
+  height: 150px;
+  margin-top: 20px;
+  background: url(../img/logo.png) no-repeat 0 0;
   float: left;
   color:#fff;
   text-decoration:none;
@@ -575,7 +575,7 @@ body.bidi div.right_panel {
 nav#main-nav {
   font-family: LeagueGothicRegular, "Helvetica Neue", Helvetica, Arial, sans-serif;
   position: absolute;
-  top: 40px;
+  top: 120px;
   right: -18px;
 }
 nav#main-nav ul {
@@ -586,7 +586,7 @@ nav#main-nav ul li {
 }
 nav#main-nav ul li a {
   display: block;
-  padding: 0 18px;
+  padding: 0 15px;
   text-decoration: none;
   color: #484746;
   overflow: hidden;
@@ -774,14 +774,17 @@ a.btn:hover {
 
 /**************************************************************************** page specific styles */
 /** homepage ** */
+/*
 body.home header {
   height: 288px;
 }
+*/
 
 body.home header .container {
   height: 388px;
 }
 
+/*
 body.home header h1#logo {
   top:129px;
   left:210px;
@@ -794,6 +797,7 @@ body.home header h1#logo a {
   background: url(../img/pycon_2012.png) no-repeat 0 0;
   text-indent:-9999px;
 }
+*/
 
 body.home header h2#slogan {
   top:198px;
