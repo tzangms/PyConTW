@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-02-13 12:52+0800\n"
+"POT-Creation-Date: 2012-02-15 17:35+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -129,11 +129,11 @@ msgstr ""
 msgid "Duration"
 msgstr "長度"
 
-#: symposion/speakers/forms.py:18 symposion/speakers/models.py:37
+#: symposion/speakers/forms.py:18 symposion/speakers/models.py:38
 msgid "Sessions preference"
 msgstr "議程偏好"
 
-#: symposion/speakers/forms.py:22 symposion/speakers/models.py:41
+#: symposion/speakers/forms.py:22 symposion/speakers/models.py:42
 msgid ""
 "If you've submitted multiple proposals, please let us know if you only want "
 "to give one or if you'd like to give two talks."
@@ -174,6 +174,10 @@ msgstr "twitter 帳號"
 #: symposion/speakers/models.py:27
 msgid "Your Twitter account, with or without the @"
 msgstr "你的 twitter 帳號"
+
+#: symposion/speakers/models.py:32
+msgid "I agree pycon can release my slides and video recording."
+msgstr ""
 
 #: symposion/speakers/views.py:28
 msgid "submit another talk proposal"

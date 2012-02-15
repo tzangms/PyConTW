@@ -140,6 +140,7 @@ INSTALLED_APPS = [
     "django.contrib.humanize",
     "django.contrib.staticfiles",
     "gunicorn",
+    "nashvegas",
     
     # external
     "uni_form",
