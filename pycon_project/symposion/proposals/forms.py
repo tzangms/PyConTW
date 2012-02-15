@@ -16,8 +16,6 @@ class ProposalForm(forms.ModelForm):
             "kind",
             "category",
             "audience_level",
-            "extreme",
-            "duration",
             "description",
             "abstract",
             "additional_notes",

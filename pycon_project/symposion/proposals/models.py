@@ -49,7 +49,7 @@ class Proposal(models.Model):
         default=False,
         help_text = _("'Extreme' talks are advanced talks with little or no introductory material. See <a href='http://us.pycon.org/2012/speaker/extreme/' target='_blank'>http://us.pycon.org/2012/speaker/extreme/</a> for details.")
     )
-    duration = models.IntegerField(_("Duration"), choices=DURATION_CHOICES)
+    duration = models.IntegerField(_("Duration"), choices=DURATION_CHOICES, default=0)
     submitted = models.DateTimeField(
         default = datetime.datetime.now,
         editable = False,
