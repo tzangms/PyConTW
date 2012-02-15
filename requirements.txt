@@ -31,5 +31,6 @@ mailout==1.0a1.dev2
 markdown==2.0.3
 html5lib==0.90
 django-reversion==1.4
+nashvegas==0.7
 gunicorn
 redis
