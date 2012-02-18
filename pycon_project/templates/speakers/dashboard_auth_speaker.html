@@ -26,7 +26,8 @@
     <h2>{% trans "Proposals" %}</h2>
     
     {% if proposals %}
-        <table class="proposals">
+        <table class="table proposals">
+            <thead>
             <tr>
                 <th>{% trans "Title" %}</th>
                 <th>{% trans "Session type" %}</th>
@@ -35,6 +36,8 @@
                 <th>{% trans "Messages" %}</th>
                 <th>{% trans "Actions" %}</th>
             </tr>
+            </thead>
+            <tbody>
             {% for proposal in proposals %}
             <tr>
                 <td><a href="{% url proposal_detail proposal.pk %}">{{ proposal.title }}</a></td>
@@ -67,6 +70,7 @@
                 </td>
             </tr>
             {% endfor %}
+            </tbody>
         </table>
     {% else %}
         {% url proposal_submit as proposal_submit_url %}

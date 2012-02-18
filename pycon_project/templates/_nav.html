@@ -1,6 +1,10 @@
 {% load wakawaka_tags i18n %}
-<nav id="main-nav">
-    <ul>
+<nav>
+    <div class="navbar">
+        <div class="navbar-inner">
+            <div class="container">
+    <ul class="nav">
+        <li><a href="{% url home %}" id="link-about">{% trans "Homepage" %}</a></li>
         <li><a href="{% url about %}" id="link-about">{% trans "About" %}</a></li>
         <li><a href="{% url program %}" id="link-program">{% trans "Program" %}</a></li>
         {# <li><a href="{% url schedule_conference %}" id="link-schedule">{% trans "Schedule" %}</a></li> #}
@@ -16,4 +20,7 @@
         {# <li><a href="/2012/sponsors/jobs/" id="link-jobs">{% trans "Jobs Fair" %}</a></li> #}
         <li><a href="/2012/blog/" id="link-blog">{% trans "Blog" %}</a></li>
     </ul>
+            </div>
+        </div>
+    </div>
 </nav>

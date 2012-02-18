@@ -34,3 +34,5 @@ django-reversion==1.4
 nashvegas==0.7
 gunicorn
 redis
+django-extensions
+django-bootstrap-form

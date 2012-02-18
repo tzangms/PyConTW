@@ -6,18 +6,20 @@
         <a href="#type-tutorial">Tutorials</a>
         <a href="#type-poster">Posters</a>
 </div>
-{% endcomment %}
+
 <div class="badges legend">
     <div class="badge extreme">E</div><div class="label"> = EXTREME PyCon</div>
     <div class="clear"></div>
     <div class="badge invited">I</div><div class="label"> = Invited</div>
 </div>
+{% endcomment %}
 
 {% for type, props in proposals.iteritems %}
     {% for proposal in props %}
         {% if forloop.first %}
             <h3 id="type-{{ proposal.get_session_type_display|slugify|lower }}">{{ proposal.get_session_type_display }}{{ props|length|pluralize }}</h3>
-            <table class="review-list">
+            <table class="table">
+                <thead>
                 <tr>
                     <th>
                         Title
@@ -44,6 +46,8 @@
                         Total
                     </th>
                 </tr>
+                </thead>
+        <tbody>
         {% endif %}
         <tr class="{{ proposal.latest_vote }}">
             <td>
@@ -93,6 +97,7 @@
             </td>
         </tr>
         {% if forloop.last %}
+            </tbody>
             </table>
         {% endif %}
     {% endfor %}

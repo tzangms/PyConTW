@@ -1,7 +1,6 @@
 {% extends "speakers/base.html" %}
 
-{% load markitup_tags %}
-{% load uni_form_tags %}
+{% load markitup_tags bootstrap %}
 
 {% block extra_head %}
     <link rel="stylesheet" href="{{ STATIC_URL }}css/facebox.css" />
@@ -12,12 +11,14 @@
     <h1>Edit Speaker Profile</h1>
     
     {% markitup_media %}
-    <form method="POST" action="" enctype="multipart/form-data" class="uniForm">
+    <form method="post" enctype="multipart/form-data" class="form-horizontal">
         {% csrf_token %}
-        <fieldset class="inlineLabels">
-            {{ form|as_uni_form }}
-            <div class="form_block">
-                <input type="submit" value="submit" />
+        <fieldset>
+
+            {{ form|bootstrap }}
+
+            <div class="form-actions">
+                <input class="btn btn-primary" type="submit" value="submit" />
             </div>
         </fieldset>
     </form>

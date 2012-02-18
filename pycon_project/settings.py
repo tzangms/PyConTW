@@ -139,8 +139,10 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.humanize",
     "django.contrib.staticfiles",
+    "bootstrapform",
     "gunicorn",
     "nashvegas",
+    "django_extensions",
     
     # external
     "uni_form",

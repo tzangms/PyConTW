@@ -3,14 +3,17 @@
 <html lang="{{ LANGUAGE_CODE }}">
     <head>
         <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="{{ STATIC_URL }}img/favicon.ico" rel="shortcut icon" />
         <title>{% block head_title_base %}{% if SITE_NAME %}{{ SITE_NAME }} : {% endif %}{% block head_title %}{% endblock %}{% endblock %}</title>
         <!--  hack to make IE able to apply CSS to elements that it doesn't usually know about. See http://code.google.com/p/html5shim/ -->
         <!--[if lt IE 9]>
         <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
-        {# <link rel="stylesheet" href="{{ STATIC_URL }}pinax/css/base.css" /> #}
+        {% comment %}
+        <link rel="stylesheet" href="{{ STATIC_URL }}pinax/css/base.css" />
         <link rel="stylesheet" href="{{ STATIC_URL }}pinax/css/tabs.css" />
+        {% endcomment %}
         <link rel="stylesheet" href="{{ STATIC_URL }}css/facebox.css" />
         <link href="http://fonts.googleapis.com/css?family=Droid+Sans+Mono" rel="stylesheet" type="text/css">
         {% markitup_css %}
@@ -21,7 +24,8 @@
     </head>
 
     <body class="{% block body_class %}{% endblock %} {% if LANGUAGE_BIDI %}bidi{% endif %}" id="{% block body_id %}{% endblock %}">
-        <div class="wrapper">
+
+        <div class="container">
 
             <div class="msg-container">
                 {% if messages %}
@@ -38,6 +42,21 @@
 
             <header>
                 <div class="container">
+                    <div>
+                        {% include "_account_bar.html" %}
+                    </div>
+
+                    <div class="row">
+                        <div class="span5">
+                            <a href="/"><img src="{{ STATIC_URL }}img/logo-red.png" /></a>
+                        </div>
+                        <div class="span7">
+                        </div>
+                    </div>
+
+                    {% include "_nav.html" %}
+
+                    {% comment %}
                     {% block header %}
                         <h1 id="logo">{% block logo_link_image %}{% endblock %}</h1>
                         {% block slogan %}{% endblock %}
@@ -47,6 +66,7 @@
                         {% block nav %}{% endblock %}
                         {% block header_extra_base %}{% endblock %}
                     {% endblock %}
+                    {% endcomment %}
                 </div>
             </header>
 

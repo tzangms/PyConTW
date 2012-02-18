@@ -4,79 +4,54 @@
 {% block body_class %}home{% endblock %}
 
 {% block slogan %}
-    <h2 id="slogan">Santa Clara, CA</h2>
 {% endblock %}
 
 {% block header_extra_base %}
     <div id="python"></div>
-    {% comment %}
-    <div class="dates">
-        <div class="tutorials">
-            <h4>Tutorials: March 7th&ndash;8th</h4>
-        </div>
-        <div class="talks">
-            <h4>Talks: March 9th&ndash;11th</h4>
-        </div>
-        <div class="sprints">
-            <h4>Sprints: March 12th&ndash;15th</h4>
-        </div>
-    </div>
-    {% sponsors header as header_sponsors %}
-    <div class="diamond-sponsors">
-        <span>Presented by</span>
-        {% for sponsor in header_sponsors reversed %}
-
-        <a href="{% url sponsor_list %}">
-            {% thumbnail sponsor.website_logo "130" format="PNG" as logo %}
-                <img src="{{ logo.url }}" alt="{{ sponsor.name }}" />
-            {% endthumbnail %}
-        </a>
-        {% endfor %}
-    </div>
-    {% endcomment %}
 {% endblock %}
 
 {% block body %}
 
+    {% comment %}
     {% sponsors as sponsors %}
     <div class="mainbox">
         {% box "mainbox" %}
     </div>
-
-    {#  SECTION: our platinum and gold sponsors #}
-    {% comment %}
-    <div class="span-24 last">
-        <h1 class="hidden">Our Platinum and Gold Sponsors</h1>
-        {% include "_sponsors.html" %}
-        <p class="spacer learn-more"><a href="{% url sponsor_info %}">{% trans "Learn how to become a sponsor" %}...</a></p>
-    </div>
     {% endcomment %}
+    <div class="row">
+        <div class="span9">
+            <div id="whatispycon">
+                <h1>What is <span>PyCon</span>?</h1>
 
-    {#  SECTION: what is pycon #}
-    <div class="span-8">
-        <h1 class="section-title">What is <span>PyCon</span>?</h1>
-    </div>
-    <div class="span-16 last spacer">
-        {% box "homepage_main" %}
-        <p class="learn-more"><a href="{% url wakawaka_page 'about' %}">Learn more...</a></p>
-    </div>
+                {% box "homepage_main" %}
 
-    {#  SECTION: blog #}
-    <div class="span-8">
-        <h1 class="section-title"><span>Announcements</span></h1>
-    </div>
-    <div class="span-16 last spacer">
-        {% latest_blog_posts as posts %}
-        {% for post in posts %}
-            <div class="blog-post">
-                <h2><a href="{{ post.get_absolute_url }}">{{ post.title }}</a></h2>
-                {% include "biblion/dateline.html" %}
-                <div class="teaser">{{ post.teaser_html|safe }}</div>
+                <p class="learn-more"><a href="{% url wakawaka_page 'about' %}">Learn more...</a></p>
             </div>
-        {% empty %}
-        <p>No blog posts have been published.</p>
-        {% endfor %}
+
+            <h1><span>Announcements</span></h1>
+
+            {% latest_blog_posts as posts %}
+            {% for post in posts %}
+                <div class="blog-post">
+                    <h2><a href="{{ post.get_absolute_url }}">{{ post.title }}</a></h2>
+                    {% include "biblion/dateline.html" %}
+                    <div class="teaser">{{ post.teaser_html|safe }}</div>
+                </div>
+            {% empty %}
+            <p>No blog posts have been published.</p>
+            {% endfor %}
+        </div>
+
+        <div class="span3">
+            <div class="sponsor">
+                <img src="http://placehold.it/180x75&text=Sponsor" />
+            </div>
+            <div class="sponsor">
+                <img src="http://placehold.it/180x75&text=Sponsor" />
+            </div>
+        </div>
     </div>
+
     {#  SECTION: silver and media sponsors #}
     <div class="span-24 last">
         <hr />

@@ -10,29 +10,37 @@
 {% block body_class %}account{% endblock %}
 
 {% block body_base %}
-    <div class="span-8">
+    <div class="row">
+    <div class="span2">
         <h1 class="section-title">{% block section_title %}{% trans "Account" %}{% endblock %}</h1>
         {% block sidebar_extra %}{% endblock %}
         {% block account_nav %}
             {% if user.is_authenticated %}
-            <div class="user-nav">
-                <a href="{% url acct_email %}">{% trans "Email Addresses" %}</a>
-                <a href="{% url openid-associations %}">{% trans "OpenID Associations" %}</a>
+            <ul class="nav nav-tabs nav-stacked">
+                <li><a href="{% url acct_email %}">{% trans "Email Addresses" %}</a></li>
+                <li><a href="{% url openid-associations %}">{% trans "OpenID Associations" %}</a></li>
+                <li>
                 {% if user.password %}
                     <a href="{% url acct_passwd %}">{% trans "Change Password" %}</a>
                 {% else %}
                     <a href="{% url acct_passwd_set %}">{% trans "Set Password" %}</a>
                 {% endif %}
+                </li>
+                <li>
                 {% if user.password %}
                     {% ifopenid %}
                         <a href="{% url acct_passwd_delete %}">{% trans "Delete Password" %}</a>
                     {% endifopenid %}
                 {% endif %}
+                </li>
                 {# | <a href="{% url acct_language_change %}">{% trans "Language" %}</a> #}
+                <li>
                 <a href="{% url acct_timezone_change %}">{% trans "Timezone" %}</a>
-            </div>
+                </li>
+            </ul>
             {% endif %}
         {% endblock %}
     </div>
-    <div class="span-16 last">{% block body %}{% endblock %}</div>
+    <div class="span10">{% block body %}{% endblock %}</div>
+    </div>
 {% endblock %}
