@@ -5,7 +5,7 @@
 
 {% block body %}
     {% sponsors as sponsors %}
-    <div class="span-20 spacer main-content">
+    <div class="span9">
         <h1 class="section-title">{% block subpage_title %}About PyCon <span>Sponsors</span>{% endblock %}</h1>
         <div class="sponsor-list">
             {% regroup sponsors by level as level_list %}
@@ -32,7 +32,8 @@
             {% endfor %}
         </div>
     </div>
-    <div class="span-4 last">
+    <div class="span3">
+        {% comment %}
         <p><a href="{% url sponsor_info %}" class="btn-sponsor"><span>Learn how to<br />become a <b>sponsor</b></span></a></p>
         <nav class="sidenav sponsor-sidenav">
             <ul>
@@ -41,5 +42,6 @@
                 {% endfor %}
             </ul>
         </nav>
+        {% endcomment %}
     </div>
 {% endblock %}
