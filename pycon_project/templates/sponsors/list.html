@@ -1,12 +1,13 @@
 {% extends "sponsors/base.html" %}
 
 {% load sponsors_pro_tags %}
-{% load thumbnail %}
+{% load thumbnail i18n %}
 
 {% block body %}
     {% sponsors as sponsors %}
+    <div class="row">
     <div class="span9">
-        <h1 class="section-title">{% block subpage_title %}About PyCon <span>Sponsors</span>{% endblock %}</h1>
+        <h1 class="section-title">{% block subpage_title %}<span>{% trans "Sponsors" %}</span>{% endblock %}</h1>
         <div class="sponsor-list">
             {% regroup sponsors by level as level_list %}
             {% for level in level_list %}
@@ -43,5 +44,6 @@
             </ul>
         </nav>
         {% endcomment %}
+    </div>
     </div>
 {% endblock %}

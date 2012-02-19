@@ -1,4 +1,5 @@
 {% extends "biblion/blog_base.html" %}
+{% load i18n %}
 
 {% block primary %}
     {% if posts %}
@@ -11,6 +12,6 @@
             </div>
         {% endfor %}
     {% else %}
-        <p>No blog posts have been published.</p>
+        <p>{% trans "No blog posts have been published." %}</p>
     {% endif %}
 {% endblock %}

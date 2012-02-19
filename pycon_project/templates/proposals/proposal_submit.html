@@ -7,20 +7,6 @@
 
 {% block extra_head %}
     <link rel="stylesheet" href="{{ STATIC_URL }}css/facebox.css" />
-    <style>
-        .uniForm .formHint {
-            line-height: 12pt;
-            margin-top: 8px;
-            width: 99%;
-        }
-        #div_id_kind ul li {
-            display: inline;
-        }
-        #div_id_extreme label {
-            display: inline;
-        }
-
-    </style>
 {% endblock %}
 
 
@@ -38,9 +24,8 @@
                 <p>
                     {% trans "You will be able to edit your proposal after it has been submitted. The program committee may ask questions, provide feedback, and even suggest changes to your proposal as part of the review processes." %}
                 </p>
-                <input class="btn btn-primary" type="submit" name="finish" value="Save" />
-                <!-- <span style="float: right; padding: 4px 6px">or</span> -->
-                <input class="btn" type="submit" name="add-speakers" value="Save and Add Additional Speakers" />
+                <input class="btn btn-primary" type="submit" name="finish" value="{% trans "Save" %}" />
+                <input class="btn" type="submit" name="add-speakers" value="{% trans "Save and Add Additional Speakers" %}" />
             </div>
         </fieldset>
     </form>

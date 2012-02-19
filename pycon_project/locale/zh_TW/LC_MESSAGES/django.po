@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-02-15 17:35+0800\n"
+"POT-Creation-Date: 2012-02-19 13:31+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -28,7 +28,7 @@ msgid "Create"
 msgstr "建立"
 
 #: apps/boxes/templatetags/boxes_tags.py:77
-#: templates/speakers/dashboard_auth_speaker.html:63
+#: templates/speakers/dashboard_auth_speaker.html:66
 #: templates/wakawaka/page.html:53
 msgid "Edit"
 msgstr "編輯"
@@ -58,7 +58,7 @@ msgid "I prefer a 45 minute slot"
 msgstr "我偏好 45 分鐘"
 
 #: symposion/proposals/models.py:29
-#: templates/speakers/dashboard_auth_speaker.html:31
+#: templates/speakers/dashboard_auth_speaker.html:32
 msgid "Title"
 msgstr "名稱"
 
@@ -95,7 +95,7 @@ msgstr ""
 "cheat-sheet/' target='_blank'>編輯</a>。"
 
 #: symposion/proposals/models.py:41
-#: templates/speakers/dashboard_auth_speaker.html:33
+#: templates/speakers/dashboard_auth_speaker.html:34
 msgid "Audience level"
 msgstr "聽眾程度"
 
@@ -271,7 +271,7 @@ msgstr "文字"
 msgid "file"
 msgstr "檔案"
 
-#: templates/_account_bar.html:7 templates/account/base.html:14
+#: templates/_account_bar.html:7 templates/account/base.html:15
 #: templates/account/email.html:6
 msgid "Account"
 msgstr "帳號"
@@ -296,68 +296,64 @@ msgstr "登入"
 msgid "Sign Up"
 msgstr "註冊"
 
-#: templates/_nav.html:4
+#: templates/_nav.html:7
+msgid "Homepage"
+msgstr ""
+
+#: templates/_nav.html:8
 msgid "About"
 msgstr "關於"
 
-#: templates/_nav.html:5
+#: templates/_nav.html:9
 msgid "Program"
 msgstr "議程"
 
-#: templates/_nav.html:7
+#: templates/_nav.html:11
 msgid "Speakers"
 msgstr "講者"
 
-#: templates/_nav.html:13
+#: templates/_nav.html:17
 msgid "Registration"
 msgstr "註冊"
 
-#: templates/_nav.html:14
+#: templates/_nav.html:18
 msgid "Venue"
 msgstr "地點"
 
-#: templates/_nav.html:15
+#: templates/_nav.html:19
 msgid "Sponsors"
 msgstr "贊助商"
 
-#: templates/_nav.html:17
+#: templates/_nav.html:21
 msgid "Blog"
 msgstr "部落格"
-
-#: templates/base.html:31
-msgid "clear"
-msgstr ""
 
 #: templates/account/_openid_login.html:23 templates/account/login.html:42
 msgid "Log in &raquo;"
 msgstr "登入 &raquo;"
 
-#: templates/account/base.html:19 templates/account/email.html:9
+#: templates/account/base.html:20 templates/account/email.html:9
 msgid "Email Addresses"
 msgstr "電子郵件"
 
-#: templates/account/base.html:20 templates/django_openid/associations.html:5
-msgid "OpenID Associations"
-msgstr "OpenID 關連"
-
-#: templates/account/base.html:22 templates/account/password_change.html:5
+#: templates/account/base.html:24 templates/account/password_change.html:5
 #: templates/account/password_change.html:8
 #: templates/account/password_reset_from_key.html:5
 #: templates/account/password_reset_from_key.html:8
 msgid "Change Password"
 msgstr "更改密碼"
 
-#: templates/account/base.html:24 templates/account/password_set.html:6
+#: templates/account/base.html:26 templates/account/password_set.html:6
 #: templates/account/password_set.html:9
 msgid "Set Password"
 msgstr "設定密碼"
 
-#: templates/account/base.html:28 templates/account/password_delete.html:5
+#: templates/account/base.html:32 templates/account/password_delete.html:5
 #: templates/account/password_delete.html:8
 msgid "Delete Password"
 msgstr "刪除密碼"
 
-#: templates/account/base.html:32 templates/account/timezone_change.html:6
+#: templates/account/base.html:38 templates/account/timezone_change.html:6
 #: templates/account/timezone_change.html:9
 msgid "Timezone"
 msgstr "時區"
@@ -421,35 +417,31 @@ msgstr "更改我的語言"
 msgid "Login"
 msgstr "登入"
 
-#: templates/account/login.html:13 templates/account/signup.html:13
+#: templates/account/login.html:14 templates/account/signup.html:13
 msgid "Log In"
 msgstr "登入"
 
-#: templates/account/login.html:17 templates/account/password_reset.html:12
+#: templates/account/login.html:18 templates/account/password_reset.html:12
 #: templates/account/password_reset_done.html:12
 msgid "Note"
 msgstr "注意"
 
-#: templates/account/login.html:17 templates/account/password_reset.html:12
+#: templates/account/login.html:18 templates/account/password_reset.html:12
 #: templates/account/password_reset_done.html:12
 #, python-format
 msgid "you are already logged in as %(user_display)s."
 msgstr "你已經登入為 %(user_display)s。"
 
-#: templates/account/login.html:21
+#: templates/account/login.html:22
 #, python-format
 msgid "Don't have an account? <a href=\"%(signup_url)s\">Sign up</a>!"
 msgstr "沒有帳號嗎? <a href=\"%(signup_url)s\">註冊</a>!"
 
-#: templates/account/login.html:35
+#: templates/account/login.html:43
 msgid "Forgot password?"
 msgstr "忘記密碼?"
 
-#: templates/account/login.html:47
-msgid "Or sign in with your OpenID"
-msgstr "或者使用 OpenID 進行註冊"
-
-#: templates/account/login.html:57
+#: templates/account/login.html:61
 #, python-format
 msgid ""
 "If you have any trouble logging in to your account, contact us at <a href="
@@ -609,6 +601,10 @@ msgstr ""
 msgid "Verify this Association"
 msgstr "驗證這個關連"
 
+#: templates/django_openid/associations.html:5
+msgid "OpenID Associations"
+msgstr "OpenID 關連"
+
 #: templates/django_openid/associations.html:8
 msgid "Manage OpenID Associations"
 msgstr "管理 OpenID 關連"
@@ -703,16 +699,24 @@ msgid ""
 "\">Privacy Policy</a>."
 msgstr ""
 
-#: templates/proposals/proposal_submit.html:28
+#: templates/proposals/proposal_submit.html:14
 #, fuzzy
 msgid "Submit A Proposal"
 msgstr "提交演講提案"
 
-#: templates/proposals/proposal_submit.html:39
+#: templates/proposals/proposal_submit.html:25
 msgid ""
 "You will be able to edit your proposal after it has been submitted. The "
 "program committee may ask questions, provide feedback, and even suggest "
 "changes to your proposal as part of the review processes."
+msgstr ""
+
+#: templates/proposals/proposal_submit.html:27
+msgid "Save"
+msgstr ""
+
+#: templates/proposals/proposal_submit.html:28
+msgid "Save and Add Additional Speakers"
 msgstr ""
 
 #: templates/speakers/base.html:8
@@ -743,6 +747,7 @@ msgstr "提交一個或多個演講提案"
 
 #: templates/speakers/dashboard_auth_nospeaker.html:17
 #: templates/speakers/dashboard_auth_speaker.html:19
+#, fuzzy
 msgid ""
 "You will be able to come back and revise your submission until the "
 "deadline.\n"
@@ -772,47 +777,47 @@ msgstr "編輯講者資訊"
 msgid "Proposals"
 msgstr "提案"
 
-#: templates/speakers/dashboard_auth_speaker.html:32
+#: templates/speakers/dashboard_auth_speaker.html:33
 msgid "Session type"
 msgstr "議程類型"
 
-#: templates/speakers/dashboard_auth_speaker.html:34
+#: templates/speakers/dashboard_auth_speaker.html:35
 msgid "Status"
 msgstr "狀態"
 
-#: templates/speakers/dashboard_auth_speaker.html:35
+#: templates/speakers/dashboard_auth_speaker.html:36
 msgid "Messages"
 msgstr "訊息"
 
-#: templates/speakers/dashboard_auth_speaker.html:36
+#: templates/speakers/dashboard_auth_speaker.html:37
 msgid "Actions"
 msgstr "動作"
 
-#: templates/speakers/dashboard_auth_speaker.html:45
+#: templates/speakers/dashboard_auth_speaker.html:48
 msgid "Cancelled"
 msgstr "已取消"
 
-#: templates/speakers/dashboard_auth_speaker.html:49
+#: templates/speakers/dashboard_auth_speaker.html:52
 msgid "Accepted"
 msgstr "已接受"
 
-#: templates/speakers/dashboard_auth_speaker.html:51
+#: templates/speakers/dashboard_auth_speaker.html:54
 msgid "Submitted"
 msgstr "已送出"
 
-#: templates/speakers/dashboard_auth_speaker.html:54
+#: templates/speakers/dashboard_auth_speaker.html:57
 msgid "Associated"
 msgstr ""
 
-#: templates/speakers/dashboard_auth_speaker.html:64
+#: templates/speakers/dashboard_auth_speaker.html:67
 msgid "Add/Remove Speakers"
 msgstr "新增/移除講者"
 
-#: templates/speakers/dashboard_auth_speaker.html:73
+#: templates/speakers/dashboard_auth_speaker.html:77
 msgid "No proposals"
 msgstr "沒有任何提案"
 
-#: templates/speakers/dashboard_auth_speaker.html:73
+#: templates/speakers/dashboard_auth_speaker.html:77
 #, python-format
 msgid "You can <a href=\"%(proposal_submit_url)s\">submit one</a> now!"
 msgstr "你可以現在<a href=\"%(proposal_submit_url)s\">提交</a>你的演講提案!"
@@ -959,3 +964,6 @@ msgstr ""
 #, python-format
 msgid "History for %(slug)s"
 msgstr ""
+
+#~ msgid "Or sign in with your OpenID"
+#~ msgstr "或者使用 OpenID 進行註冊"

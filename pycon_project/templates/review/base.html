@@ -3,27 +3,16 @@
 {% block body_class %}full review{% endblock %}
 
 {% block subnav %}
-    {% comment %}
-    <a href="{% url review_assignments %}">your assignments</a>
-    |
-    {% endcomment %}
-    <a href="{% url review_list %}">All reviews</a>
-    |
-    <a href="{% url review_list_user user.username %}">Your reviews</a>
-    |
-    <a href="{% url review_stats %}">Stats</a>
-    {% if is_reviewer_admin %}
-        |
-        <a href="{% url review_admin %}">Admin</a>
-    {% endif %}
-    {% comment %}
-    {% if is_reviewer_tutorials %}
-        <br />
-        <a href="{% url review_tutorial_list %}">all tutorial reviews</a>
-        |
-        <a href="{% url review_tutorial_list_user user.username %}">your tutorial reviews</a>
-    {% endif %}
-    {% endcomment %}
+    <ul class="nav nav-pills">
+        <li class=""><a href="{% url review_list %}">All reviews</a></li>
+        <li><a href="{% url review_list_user user.username %}">Your reviews</a></li>
+        <li><a href="{% url review_stats %}">Stats</a></li>
+        <li>
+        {% if is_reviewer_admin %}
+            <a href="{% url review_admin %}">Admin</a>
+        {% endif %}
+        </li>
+    </ul>
 {% endblock %}
 
 {% block right %}{% endblock %}

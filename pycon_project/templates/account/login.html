@@ -1,7 +1,7 @@
 {% extends "site_base.html" %}
 
 {% load i18n %}
-{% load uni_form_tags %}
+{% load bootstrap %}
 {% load ifsetting_tag %}
 {% load account_tags %}
 
@@ -9,7 +9,8 @@
 {% block body_class %}full{% endblock %}
 
 {% block body %}
-    <div class="span-8">
+<div class="row">
+    <div class="span2">
         <h1 class="section-title">{% trans "Log In" %}</h1>
 
         {% if user.is_authenticated %}
@@ -22,31 +23,33 @@
             {% endifsetting %}
         {% endif %}
     </div>
-    <div class="span-16 last">
+    <div class="span10">
 
         {% if openid and not user.is_authenticated %}
             <p><span class="warning">It appears you have started to login using OpenID. Want to <a href="{% url openid-register %}">finish logging in</a>?</span></p>
         {% endif %}
 
-        <form class="login uniForm" method="POST" action="{% url acct_login %}">
+        <form class="form-horizontal" method="post" action="{% url acct_login %}">
             {% csrf_token %}
             <fieldset class="inlineLabels">
                 <div class="form_block">
-                    <a href="{% url acct_passwd_reset %}">{% trans "Forgot password?" %}</a>
                 </div>
-                {{ form|as_uni_form }}
+                {{ form|bootstrap }}
                 {% if redirect_field_value %}
                     <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
                 {% endif %}
-                <div class="form_block">
-                    <input type="submit" value="{% trans "Log in &raquo;" %}" />
+                <div class="form-actions">
+                    <input class="btn btn-primary" type="submit" value="{% trans "Log in &raquo;" %}" />
+                    &nbsp;&nbsp;<a href="{% url acct_passwd_reset %}">{% trans "Forgot password?" %}</a>
                 </div>
             </fieldset>
         </form>
 
+        {% comment %}
         <p>{% trans "Or sign in with your OpenID" %}:</p>
 
         {% include "account/_openid_login.html" %}
+        {% endcomment %}
 
         {% comment %}
         <p>{% trans "Or sign in with other sites" %}:</p>
@@ -56,6 +59,7 @@
         <p>{% blocktrans %}If you have any trouble logging in to your account, contact us at <a href="mailto:{{ CONTACT_EMAIL }}">{{ CONTACT_EMAIL }}</a>.{% endblocktrans %}</p>
 
     </div>
+</div>
 {% endblock %}
 
 {% block right %}

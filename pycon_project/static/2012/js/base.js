@@ -3,7 +3,7 @@ jQuery.fn.autoscroll = function() {
 }
 
 $(function() {
-    $("#messages li a").click(function() {
+    $(".alert .close").click(function() {
         $(this).parent().fadeOut();
         return false;
     });

@@ -140,7 +140,7 @@
         
         <h3>Abstract</h3>
         <div class="abstract">
-            {{ proposal.abstract_html|safe }}
+            {{ proposal.abstract|safe }}
         </div>
         
         <p><b>Audience level</b>: {{ proposal.get_audience_level_display }}</p>
@@ -194,7 +194,7 @@
                 <div class="label">total</div>
                 <div class="number">{{ proposal.total_votes }}</div>
             </div>
-            <div class="clear"></div>
+            <div style="clear: both"></div>
         </div>
         
         {% for review in reviews %}
@@ -206,8 +206,9 @@
                     {% if is_reviewer_admin %}<form method="POST" action="{% url review_delete review.pk %}">{% csrf_token %}<input type="submit" value="delete" /></form>{% endif %}
                 </div>
             </div>
-            <div class="clear"></div>
         {% endfor %}
+
+        <hr />
 
         <h3>Vote and Comment</h3>
         
@@ -217,9 +218,7 @@
             {% csrf_token %}
             <fieldset>
                 {{ review_form|as_uni_form }}
-                <div class="form_block">
-                    <input type="submit" name="vote_submit" value="submit" />
-                </div>
+                <input class="btn" type="submit" name="message_submit" value="submit" />
             </fieldset>
         </form>
         
@@ -241,9 +240,7 @@
             {% csrf_token %}
             <fieldset>
                 {{ message_form|as_uni_form }}
-                <div class="form_block">
-                    <input type="submit" name="message_submit" value="submit" />
-                </div>
+                <input class="btn" type="submit" name="message_submit" value="submit" />
             </fieldset>
         </form>
     {% endif %}

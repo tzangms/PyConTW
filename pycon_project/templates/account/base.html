@@ -11,14 +11,14 @@
 
 {% block body_base %}
     <div class="row">
-    <div class="span2">
+    <div class="span3">
         <h1 class="section-title">{% block section_title %}{% trans "Account" %}{% endblock %}</h1>
         {% block sidebar_extra %}{% endblock %}
         {% block account_nav %}
             {% if user.is_authenticated %}
-            <ul class="nav nav-tabs nav-stacked">
+            <ul class="nav nav-pills nav-stacked">
                 <li><a href="{% url acct_email %}">{% trans "Email Addresses" %}</a></li>
-                <li><a href="{% url openid-associations %}">{% trans "OpenID Associations" %}</a></li>
+                {# <li><a href="{% url openid-associations %}">{% trans "OpenID Associations" %}</a></li> #}
                 <li>
                 {% if user.password %}
                     <a href="{% url acct_passwd %}">{% trans "Change Password" %}</a>
@@ -41,6 +41,6 @@
             {% endif %}
         {% endblock %}
     </div>
-    <div class="span10">{% block body %}{% endblock %}</div>
+    <div class="span9">{% block body %}{% endblock %}</div>
     </div>
 {% endblock %}

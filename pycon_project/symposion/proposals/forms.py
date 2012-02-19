@@ -21,6 +21,7 @@ class ProposalForm(forms.ModelForm):
             "additional_notes",
         ]
         widgets = {
+            "description": forms.Textarea(attrs={'class': 'input-xxlarge'}),
             "abstract": MarkItUpWidget(),
             "additional_notes": MarkItUpWidget(),
         }

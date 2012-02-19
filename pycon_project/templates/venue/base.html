@@ -2,16 +2,18 @@
 
 {% load sponsors_pro_tags %}
 {% load thumbnail %}
+{% load i18n %}
 
 {% block body_class %}venue{% endblock %}
 
 {% load boxes_tags %}
 
 {% block body %}
-    <div class="span-17 spacer main-content">
-        <h1 class="section-title">{% block subpage_title %}PyCon <span>Venue</span>{% endblock %}</h1>
+    <div class="span12">
+        <h1 class="section-title">{% block subpage_title %}<span>{% trans "Venue" %}</span>{% endblock %}</h1>
         {% block content %}{% endblock %}
     </div>
+    {% comment %}
     <div class="span-7 last">
         {% include "venue/_subnav.html" %}
     </div>
@@ -29,4 +31,5 @@
             </a>
         </div>
     </div>
+    {% endcomment %}
 {% endblock %}

@@ -1,12 +1,15 @@
 {% extends "site_base.html" %}
+{% load i18n %}
 
 {% block body_class %}sponsorship{% endblock %}
 
 {% block body %}
-<div class="span-8">
-    <h1 class="section-title">{% block section_title %}PyCon <span>Sponsors</span>{% endblock %}</h1>
-</div>
-<div class="span-16 last">
-    {% block content %}{% endblock %}
+<div class="row">
+    <div class="span4">
+        <h1 class="section-title">{% block section_title %}<span>{% trans "Sponsors" %}</span>{% endblock %}</h1>
+    </div>
+    <div class="span8">
+        {% block content %}{% endblock %}
+    </div>
 </div>
 {% endblock %}
