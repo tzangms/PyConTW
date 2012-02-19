@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-02-19 13:31+0800\n"
+"POT-Creation-Date: 2012-02-19 16:03+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -292,13 +292,13 @@ msgstr "編輯內容"
 msgid "Log in"
 msgstr "登入"
 
-#: templates/_account_bar.html:23 templates/account/signup.html:11
+#: templates/_account_bar.html:23 templates/account/signup.html:12
 msgid "Sign Up"
 msgstr "註冊"
 
 #: templates/_nav.html:7
 msgid "Homepage"
-msgstr ""
+msgstr "首頁"
 
 #: templates/_nav.html:8
 msgid "About"
@@ -316,15 +316,16 @@ msgstr "講者"
 msgid "Registration"
 msgstr "註冊"
 
-#: templates/_nav.html:18
+#: templates/_nav.html:18 templates/venue/base.html:13
 msgid "Venue"
 msgstr "地點"
 
-#: templates/_nav.html:19
+#: templates/_nav.html:19 templates/sponsors/base.html:9
+#: templates/sponsors/list.html:10
 msgid "Sponsors"
 msgstr "贊助商"
 
-#: templates/_nav.html:21
+#: templates/_nav.html:21 templates/biblion/blog_base.html:9
 msgid "Blog"
 msgstr "部落格"
 
@@ -417,7 +418,7 @@ msgstr "更改我的語言"
 msgid "Login"
 msgstr "登入"
 
-#: templates/account/login.html:14 templates/account/signup.html:13
+#: templates/account/login.html:14 templates/account/signup.html:14
 msgid "Log In"
 msgstr "登入"
 
@@ -536,20 +537,20 @@ msgstr "設定密碼"
 msgid "Signup"
 msgstr "註冊"
 
-#: templates/account/signup.html:13
+#: templates/account/signup.html:14
 msgid "Already have an account?"
 msgstr "已經有帳號了嗎?"
 
-#: templates/account/signup.html:18
+#: templates/account/signup.html:19
 msgid "You are already logged in."
 msgstr "你已經登入。"
 
-#: templates/account/signup.html:29 templates/django_openid/register.html:18
+#: templates/account/signup.html:30 templates/django_openid/register.html:18
 #: templates/oauth_access/finish_signup.html:19
 msgid "Sign Up &raquo;"
 msgstr "註冊 &raquo;"
 
-#: templates/account/signup.html:43 templates/django_openid/register.html:26
+#: templates/account/signup.html:47 templates/django_openid/register.html:26
 #: templates/oauth_access/finish_signup.html:28
 #, python-format
 msgid ""
@@ -581,6 +582,10 @@ msgid ""
 "link provided to finalize the signup process. If you do not receive it "
 "within a few minutes, contact us at <a href=\"mailto:%(CONTACT_EMAIL)s\">"
 "%(CONTACT_EMAIL)s</a>."
+msgstr ""
+
+#: templates/biblion/blog_list.html:15
+msgid "No blog posts have been published."
 msgstr ""
 
 #: templates/django_openid/already_logged_in.html:5

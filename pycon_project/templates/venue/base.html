@@ -9,9 +9,13 @@
 {% load boxes_tags %}
 
 {% block body %}
-    <div class="span12">
-        <h1 class="section-title">{% block subpage_title %}<span>{% trans "Venue" %}</span>{% endblock %}</h1>
-        {% block content %}{% endblock %}
+    <div class="row">
+        <div class="span9">
+            <h1 class="section-title">{% block subpage_title %}<span>{% trans "Venue" %}</span>{% endblock %}</h1>
+            {% block content %}{% endblock %}
+        </div>
+        <div class="span3">
+        </div>
     </div>
     {% comment %}
     <div class="span-7 last">

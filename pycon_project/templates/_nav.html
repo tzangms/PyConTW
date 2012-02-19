@@ -1,24 +1,23 @@
-{% load wakawaka_tags i18n %}
+{% load wakawaka_tags i18n common %}
 <nav>
     <div class="navbar">
         <div class="navbar-inner">
             <div class="container">
     <ul class="nav">
-        <li><a href="{% url home %}" id="link-about">{% trans "Homepage" %}</a></li>
-        <li><a href="{% url about %}" id="link-about">{% trans "About" %}</a></li>
-        <li><a href="{% url program %}" id="link-program">{% trans "Program" %}</a></li>
+        <li class="{% re_active request "^/2012/$" %}"><a href="{% url home %}" id="link-about">{% trans "Homepage" %}</a></li>
+        <li class="{% active request "/2012/about/" %}"><a href="{% url about %}" id="link-about">{% trans "About" %}</a></li>
+        <li class="{% active request "/2012/program/" %}"><a href="{% url program %}" id="link-program">{% trans "Program" %}</a></li>
         {# <li><a href="{% url schedule_conference %}" id="link-schedule">{% trans "Schedule" %}</a></li> #}
-        <li><a href="{% url speaker_dashboard %}" id="link-speakers">{% trans "Speakers" %}</a></li>
+        <li class="{% active request "/2012/speaker/" %}"><a href="{% url speaker_dashboard %}" id="link-speakers">{% trans "Speakers" %}</a></li>
         {# {% if is_reviewer or is_reviewer_tutorials %} #}
         {#     <li><a href="{% if is_reviewer %}{% url review_list %}{% else %}{% if is_reviewer_tutorials %}{% url review_tutorial_list %}{% endif %}{% endif %}" id="link-reviewers">Reviewers</a></li> #}
         {# {% endif %} #}
         {# <li><a href="{% url wakawaka_page 'sprints' %}" id="link-sprints">{% trans "Sprints" %}</a></li> #}
         {# <li><a href="{% url wakawaka_page 'volunteer' %}" id="link-volunteer">{% trans "Volunteer" %}</a></li> #}
-        <li><a href="{% url registration %}" id="link-registration">{% trans "Registration" %}</a></li>
-        <li><a href="{% url venue_detail %}" id="link-venue">{% trans "Venue" %}</a></li>
-        <li><a href="{% url wakawaka_page 'sponsors' %}" id="link-sponsors">{% trans "Sponsors" %}</a></li>
-        {# <li><a href="/2012/sponsors/jobs/" id="link-jobs">{% trans "Jobs Fair" %}</a></li> #}
-        <li><a href="/2012/blog/" id="link-blog">{% trans "Blog" %}</a></li>
+        <li class="{% active request "/2012/registration/" %}"><a href="{% url registration %}" id="link-registration">{% trans "Registration" %}</a></li>
+        <li class="{% active request "/2012/venue/" %}"><a href="{% url venue_detail %}" id="link-venue">{% trans "Venue" %}</a></li>
+        <li class="{% active request "/2012/sponsors/" %}"><a href="{% url wakawaka_page 'sponsors' %}" id="link-sponsors">{% trans "Sponsors" %}</a></li>
+        <li class="{% active request "/2012/blog/" %}"><a href="/2012/blog/" id="link-blog">{% trans "Blog" %}</a></li>
     </ul>
             </div>
         </div>

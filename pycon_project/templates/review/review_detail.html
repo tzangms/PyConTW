@@ -63,9 +63,11 @@
         .result {
             font-weight: bold;
             float: right;
-            font-size: 16pt;
-            border: 4px solid #fff;
-            padding: 10px;
+            font-size: 24pt;
+            border: 10px solid #fff;
+            padding: 20px;
+            margin: 20px;
+            color: white;
             -webkit-border-radius: 5px;
         }
         .result.accepted {
@@ -95,7 +97,10 @@
     
     <div class="proposal">
         <div class="result {{ proposal.result.get_accepted_display }}">
-            {{ proposal.result.get_accepted_display }}
+            <div class="text">
+                {{ proposal.result.get_accepted_display }}
+            </div>
+            <hr />
             {% if is_reviewer_admin %}
                 <form class="result-form" method="POST" action="">
                     {% csrf_token %}

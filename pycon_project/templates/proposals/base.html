@@ -3,8 +3,12 @@
 {% block body_class %}full speaker{% endblock %}
 
 {% block body %}
-	<div class="span-24 main-content last">
+<div class="row">
+	<div class="span12">
         <h1 class="section-title">{% block subpage_title %}PyCon 2012 <span>Proposals</span>{% endblock %}</h1>
         {% block content %}{% endblock %}
     </div>
+	<div class="span0">
+    </div>
+</div>
 {% endblock body %}

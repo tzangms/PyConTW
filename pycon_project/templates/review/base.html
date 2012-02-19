@@ -1,13 +1,14 @@
 {% extends "site_base.html" %}
+{% load common %}
 
 {% block body_class %}full review{% endblock %}
 
 {% block subnav %}
     <ul class="nav nav-pills">
-        <li class=""><a href="{% url review_list %}">All reviews</a></li>
-        <li><a href="{% url review_list_user user.username %}">Your reviews</a></li>
-        <li><a href="{% url review_stats %}">Stats</a></li>
-        <li>
+        <li class="{% re_active request "^/2012/review/list/$" %}"><a href="{% url review_list %}">All reviews</a></li>
+        <li class="{% re_active request "^/2012/review/list/\w+" %}"><a href="{% url review_list_user user.username %}">Your reviews</a></li>
+        <li class="{% active request "/2012/review/stats/" %}"><a href="{% url review_stats %}">Stats</a></li>
+        <li class="{% active request "/2012/review/admin/" %}">
         {% if is_reviewer_admin %}
             <a href="{% url review_admin %}">Admin</a>
         {% endif %}

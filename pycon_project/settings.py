@@ -143,6 +143,7 @@ INSTALLED_APPS = [
     "gunicorn",
     "nashvegas",
     "django_extensions",
+    "common",
     
     # external
     "uni_form",
