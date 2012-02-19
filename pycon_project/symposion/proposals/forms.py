@@ -60,12 +60,15 @@ class ProposalEditForm(ProposalForm):
             "title",
             "category",
             "audience_level",
-            "extreme",
-            "duration",
             "description",
             "abstract",
             "additional_notes",
         ]
+        widgets = {
+            "description": forms.Textarea(attrs={'class': 'input-xxlarge'}),
+            "abstract": MarkItUpWidget(),
+            "additional_notes": MarkItUpWidget(),
+        }
 
 
 class AddSpeakerForm(forms.Form):

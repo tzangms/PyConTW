@@ -1,7 +1,7 @@
 {% extends "proposals/base.html" %}
 
-{% load markitup_tags %}
-{% load uni_form_tags %}
+{% load markitup_tags i18n %}
+{% load bootstrap %}
 
 {% block extra_head %}
     <link rel="stylesheet" href="{{ STATIC_URL }}css/facebox.css" />
@@ -20,15 +20,15 @@
 {% block content %}
     <h1>Edit: {{ proposal.title }}</h1>
     
-    <p><a href="{% url proposal_speaker_manage proposal.pk %}">Manage speakers</a></p>
+    <p><a href="{% url proposal_speaker_manage proposal.pk %}">{% trans "Manage speakers" %}</a></p>
     
     {% markitup_media %}
-    <form method="POST" action="" enctype="multipart/form-data" class="uniForm">
+    <form method="POST" enctype="multipart/form-data" class="form-horizontal">
         {% csrf_token %}
         <fieldset>
-            {{ form|as_uni_form }}
-            <div class="form_block">
-                <input type="submit" value="save" />
+            {{ form|bootstrap }}
+            <div class="form-actions">
+                <input class="btn btn-primary" type="submit" value="save" />
             </div>
         </fieldset>
     </form>

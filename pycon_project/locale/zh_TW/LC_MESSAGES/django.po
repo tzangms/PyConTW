@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-02-19 16:03+0800\n"
+"POT-Creation-Date: 2012-02-19 19:21+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -33,99 +33,99 @@ msgstr "建立"
 msgid "Edit"
 msgstr "編輯"
 
-#: symposion/proposals/models.py:18
+#: symposion/proposals/models.py:19
 msgid "Novice"
 msgstr "新手"
 
-#: symposion/proposals/models.py:19
+#: symposion/proposals/models.py:20
 msgid "Intermediate"
 msgstr "中級"
 
-#: symposion/proposals/models.py:20
+#: symposion/proposals/models.py:21
 msgid "Experienced"
 msgstr "進階"
 
-#: symposion/proposals/models.py:24
+#: symposion/proposals/models.py:25
 msgid "No preference"
 msgstr "沒有偏好"
 
-#: symposion/proposals/models.py:25
+#: symposion/proposals/models.py:26
 msgid "I prefer a 30 minute slot"
 msgstr "我偏好 30 分鐘"
 
-#: symposion/proposals/models.py:26
+#: symposion/proposals/models.py:27
 msgid "I prefer a 45 minute slot"
 msgstr "我偏好 45 分鐘"
 
-#: symposion/proposals/models.py:29
+#: symposion/proposals/models.py:30
 #: templates/speakers/dashboard_auth_speaker.html:32
 msgid "Title"
 msgstr "名稱"
 
-#: symposion/proposals/models.py:31
+#: symposion/proposals/models.py:32
 msgid "Description"
 msgstr "敘述"
 
-#: symposion/proposals/models.py:33
+#: symposion/proposals/models.py:34
 msgid ""
 "If your talk is accepted this will be made public and printed in the "
 "program. Should be one paragraph, maximum 400 characters."
 msgstr ""
 
-#: symposion/proposals/models.py:35
-msgid "Kind"
-msgstr ""
-
 #: symposion/proposals/models.py:36
-msgid "Category"
-msgstr ""
+msgid "Kind"
+msgstr "類型"
 
-#: symposion/proposals/models.py:38
+#: symposion/proposals/models.py:37
+msgid "Category"
+msgstr "分類"
+
+#: symposion/proposals/models.py:39
 msgid "Abstract"
 msgstr ""
 
-#: symposion/proposals/models.py:39
-#, fuzzy
+#: symposion/proposals/models.py:40
 msgid ""
 "Detailed description and outline. Will be made public if your talk is "
 "accepted. Edit using <a href='http://warpedvisions.org/projects/markdown-"
 "cheat-sheet/' target='_blank'>Markdown</a>."
 msgstr ""
-"關於你。 使用 Markdown <a href='http://warpedvisions.org/projects/markdown-"
-"cheat-sheet/' target='_blank'>編輯</a>。"
+"細節描述及大綱, 如果你的演講提案被接受的話, 這一段將會被空開。 使用 Markdown "
+"<a href='http://warpedvisions.org/projects/markdown-cheat-sheet/' "
+"target='_blank'>編輯</a>。"
 
-#: symposion/proposals/models.py:41
+#: symposion/proposals/models.py:42
 #: templates/speakers/dashboard_auth_speaker.html:34
 msgid "Audience level"
 msgstr "聽眾程度"
 
-#: symposion/proposals/models.py:43
+#: symposion/proposals/models.py:44
 msgid "Additional notes"
 msgstr ""
 
-#: symposion/proposals/models.py:45
-#, fuzzy
+#: symposion/proposals/models.py:46
 msgid ""
 "Anything else you'd like the program committee to know when making their "
 "selection: your past speaking experience, open source community experience, "
 "etc. Edit using <a href='http://warpedvisions.org/projects/markdown-cheat-"
 "sheet/' target='_blank'>Markdown</a>."
 msgstr ""
-"關於你。 使用 Markdown <a href='http://warpedvisions.org/projects/markdown-"
+"任何其他相關資訊你希望讓議程委員會知道, 如: 你先前的演講經歷, 開放原始碼社群"
+"的經歷。 使用 Markdown <a href='http://warpedvisions.org/projects/markdown-"
 "cheat-sheet/' target='_blank'>編輯</a>。"
 
-#: symposion/proposals/models.py:48
+#: symposion/proposals/models.py:49
 msgid "Extreme"
 msgstr ""
 
-#: symposion/proposals/models.py:50
+#: symposion/proposals/models.py:51
 msgid ""
 "'Extreme' talks are advanced talks with little or no introductory material. "
 "See <a href='http://us.pycon.org/2012/speaker/extreme/' "
 "target='_blank'>http://us.pycon.org/2012/speaker/extreme/</a> for details."
 msgstr ""
 
-#: symposion/proposals/models.py:52
+#: symposion/proposals/models.py:53
 msgid "Duration"
 msgstr "長度"
 
@@ -316,7 +316,7 @@ msgstr "講者"
 msgid "Registration"
 msgstr "註冊"
 
-#: templates/_nav.html:18 templates/venue/base.html:13
+#: templates/_nav.html:18 templates/venue/base.html:14
 msgid "Venue"
 msgstr "地點"
 
@@ -325,7 +325,7 @@ msgstr "地點"
 msgid "Sponsors"
 msgstr "贊助商"
 
-#: templates/_nav.html:21 templates/biblion/blog_base.html:9
+#: templates/_nav.html:20 templates/biblion/blog_base.html:9
 msgid "Blog"
 msgstr "部落格"
 
@@ -704,8 +704,19 @@ msgid ""
 "\">Privacy Policy</a>."
 msgstr ""
 
+#: templates/proposals/proposal_edit.html:23
+msgid "Manage speakers"
+msgstr "管理講者"
+
+#: templates/proposals/proposal_speaker_manage.html:8
+msgid "Edit proposal"
+msgstr "編輯演講提案"
+
+#: templates/proposals/proposal_speaker_manage.html:27
+msgid "Add speaker"
+msgstr "新增講者"
+
 #: templates/proposals/proposal_submit.html:14
-#, fuzzy
 msgid "Submit A Proposal"
 msgstr "提交演講提案"
 
@@ -714,19 +725,19 @@ msgid ""
 "You will be able to edit your proposal after it has been submitted. The "
 "program committee may ask questions, provide feedback, and even suggest "
 "changes to your proposal as part of the review processes."
-msgstr ""
+msgstr "演講提案送出後你依然可以編輯你的提案. 提案審核流程中, 議程委員會可能會問問題, 提供回饋或建議。"
 
 #: templates/proposals/proposal_submit.html:27
 msgid "Save"
-msgstr ""
+msgstr "儲存"
 
 #: templates/proposals/proposal_submit.html:28
 msgid "Save and Add Additional Speakers"
-msgstr ""
+msgstr "儲存並新增其他講者"
 
-#: templates/speakers/base.html:8
+#: templates/speakers/base.html:9
 msgid "Speaker <span>Information</span>"
-msgstr "講者 <span>資訊</span>"
+msgstr "講者<span>資訊</span>"
 
 #: templates/speakers/dashboard_auth_nospeaker.html:9
 #: templates/speakers/dashboard_auth_speaker.html:9
@@ -751,7 +762,6 @@ msgid "submit one or more proposals"
 msgstr "提交一個或多個演講提案"
 
 #: templates/speakers/dashboard_auth_nospeaker.html:17
-#: templates/speakers/dashboard_auth_speaker.html:19
 #, fuzzy
 msgid ""
 "You will be able to come back and revise your submission until the "
@@ -774,9 +784,18 @@ msgstr "演講提交已經關閉"
 msgid "schedule has been announced"
 msgstr "議程已經發佈"
 
-#: templates/speakers/dashboard_auth_speaker.html:17
+#: templates/speakers/dashboard_auth_speaker.html:18
 msgid "Edit your speaker profile"
 msgstr "編輯講者資訊"
+
+#: templates/speakers/dashboard_auth_speaker.html:20
+#, fuzzy
+msgid ""
+"You will be able to come back and revise your submission until the deadline. "
+"Remember that speakers must register and pay to attend the conference."
+msgstr ""
+"你可以在截止期限之前回來並重新審視你的提案。\n"
+" 記住, 講者仍必須註冊並繳交費用才能參加會議。"
 
 #: templates/speakers/dashboard_auth_speaker.html:26
 msgid "Proposals"
@@ -969,6 +988,3 @@ msgstr ""
 #, python-format
 msgid "History for %(slug)s"
 msgstr ""
-
-#~ msgid "Or sign in with your OpenID"
-#~ msgstr "或者使用 OpenID 進行註冊"

@@ -1,11 +1,11 @@
 {% extends "proposals/base.html" %}
 
-{% load uni_form_tags %}
+{% load i18n bootstrap %}
 
 {% block content %}
     <h1>Proposal: {{ proposal.title }}</h1>
     
-    <p><a href="{% url proposal_edit proposal.pk %}">Edit proposal</a></p>
+    <p><a href="{% url proposal_edit proposal.pk %}">{% trans "Edit proposal" %}</a></p>
     
     <h2>Current Speakers</h2>
     
@@ -19,12 +19,12 @@
     
     <h2>Add another speaker</h2>
     
-    <form method="POST" action="" enctype="multipart/form-data" class="uniForm">
+    <form method="POST" enctype="multipart/form-data">
         {% csrf_token %}
         <fieldset>
-            {{ add_speaker_form|as_uni_form }}
-            <div class="form_block">
-                <input type="submit" value="add speaker" />
+            {{ add_speaker_form|bootstrap }}
+            <div class="form-actions">
+                <input class="btn btn-primary" type="submit" value="{% trans "Add speaker" %}" />
             </div>
         </fieldset>
     </form>

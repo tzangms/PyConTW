@@ -27,6 +27,7 @@ body {
 
 .account-bar {
     text-align: right;
+    margin: 10px 0px;
 }
 
 a.boxes-edit-link {
@@ -51,7 +52,6 @@ a.boxes-edit-link {
 h1, h2, h3 {
     margin: 20px 0px 20px 0px;
     padding-bottom: 10px;
-    border-bottom: 1px dotted #ccc;
 }
 
 form ul {

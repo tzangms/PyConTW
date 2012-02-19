@@ -1,6 +1,7 @@
 import datetime
 
 from django.utils.translation import ugettext_lazy as _
+from django.utils.safestring import mark_safe
 from django.db import models
 
 from markitup.fields import MarkupField
@@ -36,13 +37,13 @@ class Proposal(models.Model):
     category = models.ForeignKey(PresentationCategory, verbose_name=_("Category"))
     abstract = MarkupField(
         _("Abstract"),
-        help_text = _("Detailed description and outline. Will be made public if your talk is accepted. Edit using <a href='http://warpedvisions.org/projects/markdown-cheat-sheet/' target='_blank'>Markdown</a>.")
+        help_text = mark_safe(_("Detailed description and outline. Will be made public if your talk is accepted. Edit using <a href='http://warpedvisions.org/projects/markdown-cheat-sheet/' target='_blank'>Markdown</a>."))
     )
     audience_level = models.IntegerField(_("Audience level"), choices=AUDIENCE_LEVELS)
     additional_notes = MarkupField(
         _("Additional notes"),
         blank=True,
-        help_text = _("Anything else you'd like the program committee to know when making their selection: your past speaking experience, open source community experience, etc. Edit using <a href='http://warpedvisions.org/projects/markdown-cheat-sheet/' target='_blank'>Markdown</a>.")
+        help_text = mark_safe(_("Anything else you'd like the program committee to know when making their selection: your past speaking experience, open source community experience, etc. Edit using <a href='http://warpedvisions.org/projects/markdown-cheat-sheet/' target='_blank'>Markdown</a>."))
     )
     extreme = models.BooleanField(
         _("Extreme"),
