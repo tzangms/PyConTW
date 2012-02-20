@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-02-19 19:21+0800\n"
+"POT-Creation-Date: 2012-02-20 10:05+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -296,36 +296,36 @@ msgstr "登入"
 msgid "Sign Up"
 msgstr "註冊"
 
-#: templates/_nav.html:7
-msgid "Homepage"
+#: templates/_nav.html:15
+msgid "Home"
 msgstr "首頁"
 
-#: templates/_nav.html:8
+#: templates/_nav.html:18
 msgid "About"
 msgstr "關於"
 
-#: templates/_nav.html:9
+#: templates/_nav.html:21
 msgid "Program"
 msgstr "議程"
 
-#: templates/_nav.html:11
+#: templates/_nav.html:24
 msgid "Speakers"
 msgstr "講者"
 
-#: templates/_nav.html:17
+#: templates/_nav.html:27
 msgid "Registration"
 msgstr "註冊"
 
-#: templates/_nav.html:18 templates/venue/base.html:14
+#: templates/_nav.html:30 templates/venue/base.html:14
 msgid "Venue"
 msgstr "地點"
 
-#: templates/_nav.html:19 templates/sponsors/base.html:9
+#: templates/_nav.html:33 templates/sponsors/base.html:9
 #: templates/sponsors/list.html:10
 msgid "Sponsors"
 msgstr "贊助商"
 
-#: templates/_nav.html:20 templates/biblion/blog_base.html:9
+#: templates/_nav.html:36 templates/biblion/blog_base.html:9
 msgid "Blog"
 msgstr "部落格"
 
@@ -725,7 +725,9 @@ msgid ""
 "You will be able to edit your proposal after it has been submitted. The "
 "program committee may ask questions, provide feedback, and even suggest "
 "changes to your proposal as part of the review processes."
-msgstr "演講提案送出後你依然可以編輯你的提案. 提案審核流程中, 議程委員會可能會問問題, 提供回饋或建議。"
+msgstr ""
+"演講提案送出後你依然可以編輯你的提案. 提案審核流程中, 議程委員會可能會問問"
+"題, 提供回饋或建議。"
 
 #: templates/proposals/proposal_submit.html:27
 msgid "Save"
