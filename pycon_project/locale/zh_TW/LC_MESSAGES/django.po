@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-02-20 10:05+0800\n"
+"POT-Creation-Date: 2012-02-21 00:15+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -329,6 +329,22 @@ msgstr "贊助商"
 msgid "Blog"
 msgstr "部落格"
 
+#: templates/homepage.html:25
+msgid "What is PyCon?"
+msgstr ""
+
+#: templates/homepage.html:29
+msgid "Learn more"
+msgstr ""
+
+#: templates/homepage.html:32
+msgid "Announcements"
+msgstr "公告"
+
+#: templates/homepage.html:42 templates/biblion/blog_list.html:15
+msgid "No blog posts have been published."
+msgstr ""
+
 #: templates/account/_openid_login.html:23 templates/account/login.html:42
 msgid "Log in &raquo;"
 msgstr "登入 &raquo;"
@@ -582,10 +598,6 @@ msgid ""
 "link provided to finalize the signup process. If you do not receive it "
 "within a few minutes, contact us at <a href=\"mailto:%(CONTACT_EMAIL)s\">"
 "%(CONTACT_EMAIL)s</a>."
-msgstr ""
-
-#: templates/biblion/blog_list.html:15
-msgid "No blog posts have been published."
 msgstr ""
 
 #: templates/django_openid/already_logged_in.html:5
@@ -867,6 +879,14 @@ msgstr ""
 #: templates/speakers/dashboard_noauth.html:21
 msgid "logging in"
 msgstr "登入"
+
+#: templates/venue/detail.html:8
+msgid "View on a larger map"
+msgstr "檢視較大的地圖"
+
+#: templates/venue/detail.html:8
+msgid "Building of Humanity and Social Sciences"
+msgstr "中央研究院人文社會館"
 
 #: templates/wakawaka/changes.html:18
 #, python-format

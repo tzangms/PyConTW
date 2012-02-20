@@ -62,3 +62,7 @@ form ul {
 form ul li label input {
     display: inline;
 }
+
+#setlanguage {
+    float: right;
+}

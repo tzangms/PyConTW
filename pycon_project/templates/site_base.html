@@ -43,22 +43,24 @@
 {% endblock %}
 
 {% block footer %}
+    <div id="setlanguage">
+        <form action="/2012/i18n/setlang/" method="post">{% csrf_token %}
+            <span>Language&nbsp;&nbsp;</span>
+            <input name="next" type="hidden" value="{{ request.get_full_path }}" />
+            <select name="language">
+            {% for lang in LANGUAGES %}
+                <option value="{{ lang.0 }}"{% ifequal request.LANGUAGE_CODE lang.0 %} selected="selected"{% endifequal %}>{{ lang.1 }}</option>
+            {% endfor %}
+            </select>
+            <input type="submit" value="Go" />
+        </form>
+    </div>
+
     <p>
         PyCon TW 2012 built with <a href="http://djangoproject.com">Django</a> and <a href="http://pinaxproject.com">Pinax</a>. Hosting provided by <a href="http://streetvoice.com">StreetVoice</a>.
     <br />
         Questions? Comments? Contact <a href="mailto:{{ CONTACT_EMAIL }}">{{ CONTACT_EMAIL }}</a>
     </p>
 
-      <div id="setlanguage">
-            <form action="/2012/i18n/setlang/" method="post">{% csrf_token %}
-                <span>Language&nbsp;&nbsp;</span>
-                <input name="next" type="hidden" value="{{ request.get_full_path }}" />
-                <select name="language">
-                {% for lang in LANGUAGES %}
-                <option value="{{ lang.0 }}"{% ifequal request.LANGUAGE_CODE lang.0 %} selected="selected"{% endifequal %}>{{ lang.1 }}</option>
-                {% endfor %}
-                </select>
-                <input type="submit" value="Go" />
-            </form>
-      </div>
+
 {% endblock %}
