@@ -2,7 +2,7 @@
     <b>{{ message.user }}</b> has added a message on <b>{{ proposal.title }}</b>.
 </p>
 <blockquote>
-    {{ message.message_html|safe }}
+    {{ message.message|safe }}
 </blockquote>
 <p>
     {% if reviewer %}{% url review_detail proposal.pk as detail_url %}{% else %}{% url proposal_detail proposal.pk %}{% endif %}
