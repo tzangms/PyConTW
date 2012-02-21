@@ -1,15 +1,15 @@
 {% extends "site_base.html" %}
-{% load i18n %}
+{% load i18n biblion_tags %}
 
 {% block body_class %}blog{% endblock %}
 
 {% block body %}
 <div class="row">
-    <div class="span4">
+    <div class="span3">
         <h1 class="section-title"><span>{% trans "Blog" %}</span></h1>
         {% block extra_sidebar %}{% endblock %}
     </div>
-    <div class="span8">
+    <div class="span9">
         {% block primary %}{% endblock %}
     </div>
 </div>
