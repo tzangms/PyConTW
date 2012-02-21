@@ -88,6 +88,12 @@
             background: #000;
             color: #FFF;
         }
+
+        .errorField {
+            background: #f2dede;
+            padding: 0px 10px;
+            margin: 10px 0px;
+        }
     </style>
     <link rel="stylesheet" href="{{ STATIC_URL }}css/facebox.css" />
 {% endblock %}
@@ -223,7 +229,7 @@
             {% csrf_token %}
             <fieldset>
                 {{ review_form|as_uni_form }}
-                <input class="btn" type="submit" name="message_submit" value="submit" />
+                <input class="btn" type="submit" name="vote_submit" value="submit" />
             </fieldset>
         </form>
         
