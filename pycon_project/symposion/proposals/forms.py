@@ -1,5 +1,6 @@
 from django import forms
 from django.db.models import Q
+from django.utils.translation import ugettext_lazy as _
 
 from markitup.widgets import MarkItUpWidget
 
@@ -29,6 +30,7 @@ class ProposalForm(forms.ModelForm):
     def __init__(self, *args, **kwargs):
         super(ProposalForm, self).__init__(*args, **kwargs)
         self.fields["category"] = forms.ModelChoiceField(
+            label = _('Category'),
             queryset = PresentationCategory.objects.order_by("name")
         )
     
@@ -46,6 +48,7 @@ class ProposalSubmitForm(ProposalForm):
     def __init__(self, *args, **kwargs):
         super(ProposalSubmitForm, self).__init__(*args, **kwargs)
         self.fields["kind"] = forms.ModelChoiceField(
+            label = _("Kind"),
             queryset = PresentationKind.available(),
             widget = forms.RadioSelect(),
             empty_label = None

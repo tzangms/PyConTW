@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-02-21 21:40+0800\n"
+"POT-Creation-Date: 2012-02-21 21:47+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -70,7 +70,7 @@ msgstr "敘述"
 msgid ""
 "If your talk is accepted this will be made public and printed in the "
 "program. Should be one paragraph, maximum 400 characters."
-msgstr ""
+msgstr "請輸入一段文字，最多 400 個字元。如果你的演講提案審核通過, 這一段文字將會公開並放在議程表。"
 
 #: symposion/proposals/models.py:36
 msgid "Kind"
@@ -82,7 +82,7 @@ msgstr "分類"
 
 #: symposion/proposals/models.py:39
 msgid "Abstract"
-msgstr ""
+msgstr "摘要"
 
 #: symposion/proposals/models.py:40
 msgid ""
@@ -90,7 +90,7 @@ msgid ""
 "accepted. Edit using <a href='http://warpedvisions.org/projects/markdown-"
 "cheat-sheet/' target='_blank'>Markdown</a>."
 msgstr ""
-"細節描述及大綱, 如果你的演講提案被接受的話, 這一段將會被空開。 使用 Markdown "
+"細節描述及大綱, 如果你的演講提案被接受的話, 這一段將會被公開。 使用 Markdown "
 "<a href='http://warpedvisions.org/projects/markdown-cheat-sheet/' "
 "target='_blank'>編輯</a>。"
 
@@ -101,7 +101,7 @@ msgstr "聽眾程度"
 
 #: symposion/proposals/models.py:44
 msgid "Additional notes"
-msgstr ""
+msgstr "額外資訊"
 
 #: symposion/proposals/models.py:46
 msgid ""
@@ -176,8 +176,12 @@ msgid "Your Twitter account, with or without the @"
 msgstr "你的 twitter 帳號"
 
 #: symposion/speakers/models.py:32
-msgid "I agree pycon can release my slides and video recording."
-msgstr ""
+msgid "Release permission"
+msgstr "發佈權限"
+
+#: symposion/speakers/models.py:32
+msgid "I agree PyCon TW can release my slides and video recording."
+msgstr "我同意 PyCon TW 可以釋出我的投影片跟影片。"
 
 #: symposion/speakers/views.py:28
 msgid "submit another talk proposal"
@@ -868,6 +872,11 @@ msgstr ""
 #: templates/speakers/dashboard_noauth.html:21
 msgid "logging in"
 msgstr "登入"
+
+#: templates/speakers/speaker_edit.html:11
+#, fuzzy
+msgid "Edit Speaker Profile"
+msgstr "編輯講者資訊"
 
 #: templates/venue/detail.html:8
 msgid "View on a larger map"

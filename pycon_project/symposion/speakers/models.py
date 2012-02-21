@@ -29,7 +29,7 @@ class Speaker(models.Model):
     annotation = models.TextField() # staff only
     invite_email = models.CharField(max_length=200, unique=True, null=True, db_index=True)
     invite_token = models.CharField(max_length=40, db_index=True)
-    release_permission = models.BooleanField(help_text=_('I agree pycon can release my slides and video recording.'))
+    release_permission = models.BooleanField(_("Release permission"), help_text=_('I agree PyCon TW can release my slides and video recording.'))
     created = models.DateTimeField(
         default = datetime.datetime.now,
         editable = False
