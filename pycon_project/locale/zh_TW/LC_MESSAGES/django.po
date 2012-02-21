@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-02-21 00:15+0800\n"
+"POT-Creation-Date: 2012-02-21 21:37+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -738,8 +738,8 @@ msgid ""
 "program committee may ask questions, provide feedback, and even suggest "
 "changes to your proposal as part of the review processes."
 msgstr ""
-"演講提案送出後你依然可以編輯你的提案. 提案審核流程中, 議程委員會可能會問問"
-"題, 提供回饋或建議。"
+"演講提案送出後你依然可以編輯你的提案。 提案審核流程中, 議程委員會可能會問問題"
+"或提供回饋或建議。"
 
 #: templates/proposals/proposal_submit.html:27
 msgid "Save"
@@ -776,7 +776,6 @@ msgid "submit one or more proposals"
 msgstr "提交一個或多個演講提案"
 
 #: templates/speakers/dashboard_auth_nospeaker.html:17
-#, fuzzy
 msgid ""
 "You will be able to come back and revise your submission until the "
 "deadline.\n"
