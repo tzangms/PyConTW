@@ -19,7 +19,7 @@
     </div>
     {% endcomment %}
     <div class="row">
-        <div class="span9">
+        <div class="span8">
             <div id="whatispycon">
                 <h1>{% trans "What is PyCon?" %}</h1>
 
@@ -42,16 +42,18 @@
             {% endfor %}
         </div>
 
-        {% comment %}
-        <div class="span3">
+        <div class="span4">
+            {% include "_twitter.html" %}
+
+            {% comment %}
             <div class="sponsor">
                 <img src="http://placehold.it/180x75&text=Sponsor" />
             </div>
             <div class="sponsor">
                 <img src="http://placehold.it/180x75&text=Sponsor" />
             </div>
+            {% endcomment %}
         </div>
-        {% endcomment %}
     </div>
 
     {#  SECTION: silver and media sponsors #}
