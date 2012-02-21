@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-02-21 21:37+0800\n"
+"POT-Creation-Date: 2012-02-21 21:40+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -776,22 +776,21 @@ msgid "submit one or more proposals"
 msgstr "提交一個或多個演講提案"
 
 #: templates/speakers/dashboard_auth_nospeaker.html:17
+#: templates/speakers/dashboard_auth_speaker.html:20
 msgid ""
-"You will be able to come back and revise your submission until the "
-"deadline.\n"
-"            Remember that speakers must register and pay to attend the "
-"conference."
+"You will be able to come back and revise your submission until the deadline. "
+"Remember that speakers must register and pay to attend the conference."
 msgstr ""
 "你可以在截止期限之前回來並重新審視你的提案。\n"
 " 記住, 講者仍必須註冊並繳交費用才能參加會議。"
 
-#: templates/speakers/dashboard_auth_nospeaker.html:20
+#: templates/speakers/dashboard_auth_nospeaker.html:19
 #: templates/speakers/dashboard_auth_speaker.html:22
 #: templates/speakers/dashboard_noauth.html:17
 msgid "Talk submissions are now closed"
 msgstr "演講提交已經關閉"
 
-#: templates/speakers/dashboard_auth_nospeaker.html:20
+#: templates/speakers/dashboard_auth_nospeaker.html:19
 #: templates/speakers/dashboard_auth_speaker.html:22
 #: templates/speakers/dashboard_noauth.html:17
 msgid "schedule has been announced"
@@ -800,15 +799,6 @@ msgstr "議程已經發佈"
 #: templates/speakers/dashboard_auth_speaker.html:18
 msgid "Edit your speaker profile"
 msgstr "編輯講者資訊"
-
-#: templates/speakers/dashboard_auth_speaker.html:20
-#, fuzzy
-msgid ""
-"You will be able to come back and revise your submission until the deadline. "
-"Remember that speakers must register and pay to attend the conference."
-msgstr ""
-"你可以在截止期限之前回來並重新審視你的提案。\n"
-" 記住, 講者仍必須註冊並繳交費用才能參加會議。"
 
 #: templates/speakers/dashboard_auth_speaker.html:26
 msgid "Proposals"
@@ -1009,3 +999,12 @@ msgstr ""
 #, python-format
 msgid "History for %(slug)s"
 msgstr ""
+
+#~ msgid ""
+#~ "You will be able to come back and revise your submission until the "
+#~ "deadline.\n"
+#~ "            Remember that speakers must register and pay to attend the "
+#~ "conference."
+#~ msgstr ""
+#~ "你可以在截止期限之前回來並重新審視你的提案。\n"
+#~ " 記住, 講者仍必須註冊並繳交費用才能參加會議。"

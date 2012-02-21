@@ -14,8 +14,7 @@
             <li class="third">{% trans "submit one or more proposals" %}</li>
         </ol>
         
-        <p>{% blocktrans %}You will be able to come back and revise your submission until the deadline.
-            Remember that speakers must register and pay to attend the conference.{% endblocktrans %}</p>
+        <p>{% blocktrans %}You will be able to come back and revise your submission until the deadline. Remember that speakers must register and pay to attend the conference.{% endblocktrans %}</p>
     {% else %}
         <p>{% trans "Talk submissions are now closed" %} and the <a href="{% url schedule_list %}">{% trans "schedule has been announced" %}</a>.</p>
     {% endif %}
