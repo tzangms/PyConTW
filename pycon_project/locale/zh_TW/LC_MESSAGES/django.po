@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-02-21 21:47+0800\n"
+"POT-Creation-Date: 2012-02-21 21:57+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -32,6 +32,14 @@ msgstr "建立"
 #: templates/wakawaka/page.html:53
 msgid "Edit"
 msgstr "編輯"
+
+#: symposion/proposals/forms.py:33 symposion/proposals/models.py:37
+msgid "Category"
+msgstr "分類"
+
+#: symposion/proposals/forms.py:51 symposion/proposals/models.py:36
+msgid "Kind"
+msgstr "類型"
 
 #: symposion/proposals/models.py:19
 msgid "Novice"
@@ -70,15 +78,9 @@ msgstr "敘述"
 msgid ""
 "If your talk is accepted this will be made public and printed in the "
 "program. Should be one paragraph, maximum 400 characters."
-msgstr "請輸入一段文字，最多 400 個字元。如果你的演講提案審核通過, 這一段文字將會公開並放在議程表。"
-
-#: symposion/proposals/models.py:36
-msgid "Kind"
-msgstr "類型"
-
-#: symposion/proposals/models.py:37
-msgid "Category"
-msgstr "分類"
+msgstr ""
+"請輸入一段文字，最多 400 個字元。如果你的演講提案審核通過, 這一段文字將會公開"
+"並放在議程表。"
 
 #: symposion/proposals/models.py:39
 msgid "Abstract"
@@ -873,8 +875,7 @@ msgstr ""
 msgid "logging in"
 msgstr "登入"
 
-#: templates/speakers/speaker_edit.html:11
-#, fuzzy
+#: templates/speakers/speaker_edit.html:12
 msgid "Edit Speaker Profile"
 msgstr "編輯講者資訊"
 
