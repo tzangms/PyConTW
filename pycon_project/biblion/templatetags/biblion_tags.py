@@ -13,8 +13,11 @@ class LatestBlogPostsNode(template.Node):
         self.context_var = context_var
     
     def render(self, context):
-        latest_posts = Post.objects.current()[:5]
-        context[self.context_var] = latest_posts
+        language_code = context['request'].LANGUAGE_CODE
+
+        latest_posts = Post.objects.current()
+        latest_posts = latest_posts.filter(language=language_code)
+        context[self.context_var] = latest_posts[:5]
         return u""
 
 
