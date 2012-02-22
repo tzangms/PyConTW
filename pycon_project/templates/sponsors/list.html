@@ -1,7 +1,7 @@
 {% extends "sponsors/base.html" %}
 
 {% load sponsors_pro_tags %}
-{% load thumbnail i18n %}
+{% load thumbnail i18n boxes_tags %}
 
 {% block body %}
     {% sponsors as sponsors %}
@@ -9,6 +9,7 @@
     <div class="span9">
         <h1 class="section-title">{% block subpage_title %}<span>{% trans "Sponsors" %}</span>{% endblock %}</h1>
         <div class="sponsor-list">
+            {% box "registration" %}
             {% regroup sponsors by level as level_list %}
             {% for level in level_list %}
                 <h5 class="sponsor-level">{{ level.grouper }}</h5>
