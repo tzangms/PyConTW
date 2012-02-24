@@ -66,3 +66,12 @@ form ul li label input {
 #setlanguage {
     float: right;
 }
+
+#venue-map {
+    background: #fff; 
+    padding: 10px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px dashed #ccc;
+}
