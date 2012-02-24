@@ -1,6 +1,7 @@
 {% extends "pycon/base.html" %}
+{% load boxes_tags i18n %}
 
-{% load boxes_tags %}
+{% block head_title_base %}{% trans "About" %} / {{ block.super }}{% endblock %}
 
 {% block body_class %}about{% endblock %}
 

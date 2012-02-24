@@ -4,6 +4,8 @@
 {% load thumbnail %}
 {% load i18n %}
 
+{% block head_title_base %}{% trans "Venue" %} / {{ block.super }}{% endblock %}
+
 {% block body_class %}venue{% endblock %}
 
 {% load boxes_tags %}

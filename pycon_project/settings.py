@@ -190,7 +190,7 @@ FIXTURE_DIRS = [
 MESSAGE_STORAGE = "django.contrib.messages.storage.session.SessionStorage"
 
 CONTACT_EMAIL = "organizers@pycon.tw"
-SITE_NAME = "PyCon TW 2012 - A Conference for the Python Community"
+SITE_NAME = "PyCon Taiwan 2012"
 
 DEBUG_TOOLBAR_CONFIG = {
     "INTERCEPT_REDIRECTS": False,
