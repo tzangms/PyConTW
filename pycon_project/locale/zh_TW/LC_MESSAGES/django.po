@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-02-21 21:57+0800\n"
+"POT-Creation-Date: 2012-02-24 13:18+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -302,52 +302,62 @@ msgstr "登入"
 msgid "Sign Up"
 msgstr "註冊"
 
-#: templates/_nav.html:15
+#: templates/_nav.html:15 templates/homepage.html:4
 msgid "Home"
 msgstr "首頁"
 
-#: templates/_nav.html:18
+#: templates/_nav.html:18 templates/pycon/about.html:4
 msgid "About"
 msgstr "關於"
 
-#: templates/_nav.html:21
+#: templates/_nav.html:21 templates/pycon/program.html:4
 msgid "Program"
 msgstr "議程"
 
-#: templates/_nav.html:24
+#: templates/_nav.html:24 templates/speakers/base.html:6
 msgid "Speakers"
 msgstr "講者"
 
-#: templates/_nav.html:27
+#: templates/_nav.html:27 templates/pycon/registration.html:4
 msgid "Registration"
 msgstr "註冊"
 
-#: templates/_nav.html:30 templates/venue/base.html:14
+#: templates/_nav.html:30 templates/venue/base.html:7
+#: templates/venue/base.html.py:16
 msgid "Venue"
 msgstr "地點"
 
-#: templates/_nav.html:33 templates/sponsors/base.html:9
-#: templates/sponsors/list.html:10
+#: templates/_nav.html:33 templates/sponsors/base.html:4
+#: templates/sponsors/base.html.py:11 templates/sponsors/list.html:10
 msgid "Sponsors"
 msgstr "贊助商"
 
-#: templates/_nav.html:36 templates/biblion/blog_base.html:9
+#: templates/_nav.html:36 templates/biblion/blog_base.html:4
+#: templates/biblion/blog_base.html:11
 msgid "Blog"
 msgstr "部落格"
 
-#: templates/homepage.html:25
+#: templates/base.html:55
+msgid "6/9 ~ 6/10"
+msgstr "六月9日 ~ 六月10日"
+
+#: templates/base.html:57
+msgid "Humanities & Social Sciences Building, Academia Sinica"
+msgstr "中央研究院人文社會館"
+
+#: templates/homepage.html:27
 msgid "What is PyCon?"
 msgstr ""
 
-#: templates/homepage.html:29
+#: templates/homepage.html:31
 msgid "Learn more"
 msgstr ""
 
-#: templates/homepage.html:32
+#: templates/homepage.html:34
 msgid "Announcements"
 msgstr "公告"
 
-#: templates/homepage.html:42 templates/biblion/blog_list.html:15
+#: templates/homepage.html:44 templates/biblion/blog_list.html:15
 msgid "No blog posts have been published."
 msgstr ""
 
@@ -755,7 +765,7 @@ msgstr "儲存"
 msgid "Save and Add Additional Speakers"
 msgstr "儲存並新增其他講者"
 
-#: templates/speakers/base.html:9
+#: templates/speakers/base.html:11
 msgid "Speaker <span>Information</span>"
 msgstr "講者<span>資訊</span>"
 
