@@ -32,7 +32,7 @@
 
             <h1><span>{% trans "Announcements" %}</span></h1>
 
-            {% latest_blog_posts as posts %}
+            {% latest_announcements as posts %}
             {% for post in posts %}
                 <div class="blog-post">
                     <h2><a href="{{ post.get_absolute_url }}">{{ post.title }}</a></h2>

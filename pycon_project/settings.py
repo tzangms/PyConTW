@@ -199,6 +199,7 @@ DEBUG_TOOLBAR_CONFIG = {
 BIBLION_PARSER = ["wiki.markdown_parser.parse", {}]
 BIBLION_SECTIONS = [
     ("general", "General"),
+    ("announcement", "Announcement"),
 ]
 
 ACCOUNT_OPEN_SIGNUP = False

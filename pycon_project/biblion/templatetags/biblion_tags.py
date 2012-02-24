@@ -6,6 +6,25 @@ from biblion.settings import ALL_SECTION_NAME, SECTIONS
 
 register = template.Library()
 
+class LatestAnnouncementsNode(template.Node):
+    
+    def __init__(self, context_var):
+        self.context_var = context_var
+    
+    def render(self, context):
+        language_code = context['request'].LANGUAGE_CODE
+
+        latest_posts = Post.objects.current()
+        latest_posts = latest_posts.filter(section=3)
+        latest_posts = latest_posts.filter(language=language_code)
+        context[self.context_var] = latest_posts[:5]
+        return u""
+
+@register.tag
+def latest_announcements(parser, token):
+    bits = token.split_contents()
+    return LatestAnnouncementsNode(bits[2])
+
 
 class LatestBlogPostsNode(template.Node):
     
@@ -25,7 +44,6 @@ class LatestBlogPostsNode(template.Node):
 def latest_blog_posts(parser, token):
     bits = token.split_contents()
     return LatestBlogPostsNode(bits[2])
-
 
 class LatestBlogPostNode(template.Node):
     
