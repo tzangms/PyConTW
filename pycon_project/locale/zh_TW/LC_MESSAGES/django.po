@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-02-24 13:18+0800\n"
+"POT-Creation-Date: 2012-02-26 16:25+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -33,11 +33,11 @@ msgstr "建立"
 msgid "Edit"
 msgstr "編輯"
 
-#: symposion/proposals/forms.py:33 symposion/proposals/models.py:37
+#: symposion/proposals/forms.py:34 symposion/proposals/models.py:42
 msgid "Category"
 msgstr "分類"
 
-#: symposion/proposals/forms.py:51 symposion/proposals/models.py:36
+#: symposion/proposals/forms.py:52 symposion/proposals/models.py:41
 msgid "Kind"
 msgstr "類型"
 
@@ -65,16 +65,20 @@ msgstr "我偏好 30 分鐘"
 msgid "I prefer a 45 minute slot"
 msgstr "我偏好 45 分鐘"
 
-#: symposion/proposals/models.py:30
+#: symposion/proposals/models.py:32
+msgid "Chinese"
+msgstr "中文"
+
+#: symposion/proposals/models.py:35
 #: templates/speakers/dashboard_auth_speaker.html:32
 msgid "Title"
 msgstr "名稱"
 
-#: symposion/proposals/models.py:32
+#: symposion/proposals/models.py:37
 msgid "Description"
 msgstr "敘述"
 
-#: symposion/proposals/models.py:34
+#: symposion/proposals/models.py:39
 msgid ""
 "If your talk is accepted this will be made public and printed in the "
 "program. Should be one paragraph, maximum 400 characters."
@@ -82,11 +86,15 @@ msgstr ""
 "請輸入一段文字，最多 400 個字元。如果你的演講提案審核通過, 這一段文字將會公開"
 "並放在議程表。"
 
-#: symposion/proposals/models.py:39
+#: symposion/proposals/models.py:43
+msgid "Default spoken language"
+msgstr "主要語言"
+
+#: symposion/proposals/models.py:45
 msgid "Abstract"
 msgstr "摘要"
 
-#: symposion/proposals/models.py:40
+#: symposion/proposals/models.py:46
 msgid ""
 "Detailed description and outline. Will be made public if your talk is "
 "accepted. Edit using <a href='http://warpedvisions.org/projects/markdown-"
@@ -96,16 +104,16 @@ msgstr ""
 "<a href='http://warpedvisions.org/projects/markdown-cheat-sheet/' "
 "target='_blank'>編輯</a>。"
 
-#: symposion/proposals/models.py:42
+#: symposion/proposals/models.py:48
 #: templates/speakers/dashboard_auth_speaker.html:34
 msgid "Audience level"
 msgstr "聽眾程度"
 
-#: symposion/proposals/models.py:44
+#: symposion/proposals/models.py:50
 msgid "Additional notes"
 msgstr "額外資訊"
 
-#: symposion/proposals/models.py:46
+#: symposion/proposals/models.py:52
 msgid ""
 "Anything else you'd like the program committee to know when making their "
 "selection: your past speaking experience, open source community experience, "
@@ -116,18 +124,18 @@ msgstr ""
 "的經歷。 使用 Markdown <a href='http://warpedvisions.org/projects/markdown-"
 "cheat-sheet/' target='_blank'>編輯</a>。"
 
-#: symposion/proposals/models.py:49
+#: symposion/proposals/models.py:55
 msgid "Extreme"
 msgstr ""
 
-#: symposion/proposals/models.py:51
+#: symposion/proposals/models.py:57
 msgid ""
 "'Extreme' talks are advanced talks with little or no introductory material. "
 "See <a href='http://us.pycon.org/2012/speaker/extreme/' "
 "target='_blank'>http://us.pycon.org/2012/speaker/extreme/</a> for details."
 msgstr ""
 
-#: symposion/proposals/models.py:53
+#: symposion/proposals/models.py:59
 msgid "Duration"
 msgstr "長度"
 
@@ -341,7 +349,7 @@ msgstr "部落格"
 msgid "6/9 ~ 6/10"
 msgstr "六月9日 ~ 六月10日"
 
-#: templates/base.html:57
+#: templates/base.html:56
 msgid "Humanities & Social Sciences Building, Academia Sinica"
 msgstr "中央研究院人文社會館"
 

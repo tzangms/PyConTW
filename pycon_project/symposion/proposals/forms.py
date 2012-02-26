@@ -16,6 +16,7 @@ class ProposalForm(forms.ModelForm):
             "title",
             "kind",
             "category",
+            "language",
             "audience_level",
             "description",
             "abstract",

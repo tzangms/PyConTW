@@ -26,6 +26,11 @@ class Proposal(models.Model):
         (1, _("I prefer a 30 minute slot")),
         (2, _("I prefer a 45 minute slot")),
     ]
+
+    LANGUAGE_CHOICES = (
+        (1, "English"),
+        (2, _("Chinese")),
+    )
     
     title = models.CharField(_("Title"), max_length=100)
     description = models.TextField(
@@ -35,6 +40,7 @@ class Proposal(models.Model):
     )
     kind = models.ForeignKey(PresentationKind, verbose_name=_("Kind"))
     category = models.ForeignKey(PresentationCategory, verbose_name=_("Category"))
+    language = models.PositiveSmallIntegerField(_('Default spoken language'), choices=LANGUAGE_CHOICES)
     abstract = MarkupField(
         _("Abstract"),
         help_text = mark_safe(_("Detailed description and outline. Will be made public if your talk is accepted. Edit using <a href='http://warpedvisions.org/projects/markdown-cheat-sheet/' target='_blank'>Markdown</a>."))

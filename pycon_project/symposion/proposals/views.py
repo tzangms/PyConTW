@@ -44,7 +44,8 @@ def proposal_submit(request):
                 return redirect("proposal_speaker_manage", proposal.pk)
             return redirect("speaker_dashboard")
     else:
-        form = ProposalSubmitForm()
+        language = 1 if request.LANGUAGE_CODE == 'en' else 2
+        form = ProposalSubmitForm(initial={'language': language})
     ctx = {
         "form": form,
     }
