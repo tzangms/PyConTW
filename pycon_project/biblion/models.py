@@ -36,7 +36,7 @@ class Post(models.Model):
     section = models.IntegerField(choices=SECTION_CHOICES)
     
     title = models.CharField(max_length=90)
-    slug = models.SlugField()
+    slug = models.SlugField(unique=True)
     author = models.ForeignKey(User, related_name="posts")
     
     teaser_html = models.TextField(editable=False)
