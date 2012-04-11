@@ -16,7 +16,7 @@ from django.contrib.auth.models import User
 
 from emailconfirmation.models import EmailAddress
 
-from symposion.proposals.forms import ProposalSubmitForm, ProposalEditForm, AddSpeakerForm
+from symposion.proposals.forms import ProposalSubmitForm, ProposalEditForm, AddSpeakerForm, ProposalFileForm
 from symposion.proposals.models import Proposal
 from symposion.speakers.models import Speaker
 from symposion.utils.mail import send_email
@@ -245,3 +245,21 @@ def proposal_leave(request, pk):
     }
     ctx = RequestContext(request, ctx)
     return render_to_response("proposals/proposal_leave.html", ctx)
+
+@login_required
+def proposal_file(request, pk):
+    queryset = Proposal.objects.select_related("speaker")
+    proposal = get_object_or_404(queryset, pk=pk)
+
+    form = ProposalFileForm(request.POST or None, request.FILES or None)
+    if form.is_valid():
+        proposal_file = form.save(commit=False)
+        proposal_file.proposal = proposal
+        proposal_file.save()
+
+        messages.success(request, "Slides/Paper uploaded")
+        return redirect("speaker_dashboard")
+
+
+    ctx = RequestContext(request, {'proposal': proposal, 'form': form})
+    return render_to_response("proposals/proposal_file.html", ctx)

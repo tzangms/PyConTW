@@ -65,6 +65,16 @@
                         {% if request.user == proposal.speaker.user and proposal.can_edit %}
                             <a href="{% url proposal_edit proposal.pk %}">{% trans "Edit" %}</a> | 
                             <a href="{% url proposal_speaker_manage proposal.id %}">{% trans "Add/Remove Speakers" %}</a>
+                            {% if proposal.result.accepted %}
+                            |
+                                {% if proposal.files.exists %}
+                                    {% trans "Slides/Paper uploaded" %}
+
+                                    ( <a href="{% url proposal_file proposal.id %}">{% trans "Update" %}</a> )
+                                {% else %}
+                                    <a href="{% url proposal_file proposal.id %}">{% trans "Upload Slides/Paper" %}</a>
+                                {% endif %}
+                            {% endif %}
                         {% endif %}
                     {% endif %}
                 </td>

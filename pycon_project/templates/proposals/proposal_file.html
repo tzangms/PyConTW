@@ -1,0 +1,16 @@
+{% extends "proposals/base.html" %}
+
+{% load i18n bootstrap %}
+
+{% block content %}
+    <h1>{{ proposal.title }} {% trans "Slides/Paper upload" %}</h1>
+
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.file }}
+        {{ form.file.errors }}
+        <div class="form-actions">
+            <input class="btn btn-primary" type="submit" value="{% trans "upload" %}" />
+        </div>
+    </form>
+{% endblock %}

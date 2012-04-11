@@ -80,3 +80,7 @@ class Proposal(models.Model):
         yield self.speaker
         for speaker in self.additional_speakers.all():
             yield speaker
+
+class ProposalFile(models.Model):
+    proposal = models.ForeignKey(Proposal, related_name='files')
+    file = models.FileField(upload_to='proposal_files')

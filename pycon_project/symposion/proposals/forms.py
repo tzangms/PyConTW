@@ -5,7 +5,7 @@ from django.utils.translation import ugettext_lazy as _
 from markitup.widgets import MarkItUpWidget
 
 from symposion.conference.models import PresentationKind, PresentationCategory
-from symposion.proposals.models import Proposal
+from symposion.proposals.models import Proposal, ProposalFile
 
 
 class ProposalForm(forms.ModelForm):
@@ -96,3 +96,8 @@ class AddSpeakerForm(forms.Form):
                 "This email address has already been added to your talk proposal"
             )
         return value
+
+class ProposalFileForm(forms.ModelForm):
+    class Meta:
+        model = ProposalFile
+        exclude = ('proposal',)
