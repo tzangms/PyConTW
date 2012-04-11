@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-02-26 16:25+0800\n"
+"POT-Creation-Date: 2012-04-11 21:26+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -340,8 +340,7 @@ msgstr "地點"
 msgid "Sponsors"
 msgstr "贊助商"
 
-#: templates/_nav.html:36 templates/biblion/blog_base.html:4
-#: templates/biblion/blog_base.html:11
+#: templates/_nav.html:36 templates/biblion/blog_base.html:11
 msgid "Blog"
 msgstr "部落格"
 
@@ -744,6 +743,14 @@ msgstr ""
 msgid "Manage speakers"
 msgstr "管理講者"
 
+#: templates/proposals/proposal_file.html:6
+msgid "Slides/Paper upload"
+msgstr "投影片/Paper 檔案上傳"
+
+#: templates/proposals/proposal_file.html:13
+msgid "upload"
+msgstr "上傳"
+
 #: templates/proposals/proposal_speaker_manage.html:8
 msgid "Edit proposal"
 msgstr "編輯演講提案"
@@ -864,11 +871,23 @@ msgstr ""
 msgid "Add/Remove Speakers"
 msgstr "新增/移除講者"
 
-#: templates/speakers/dashboard_auth_speaker.html:77
+#: templates/speakers/dashboard_auth_speaker.html:71
+msgid "Slides/Paper uploaded"
+msgstr "投影片/Paper 檔案已經上傳"
+
+#: templates/speakers/dashboard_auth_speaker.html:73
+msgid "Update"
+msgstr "更新"
+
+#: templates/speakers/dashboard_auth_speaker.html:75
+msgid "Upload Slides/Paper"
+msgstr "上傳投影片/Paper 檔案"
+
+#: templates/speakers/dashboard_auth_speaker.html:87
 msgid "No proposals"
 msgstr "沒有任何提案"
 
-#: templates/speakers/dashboard_auth_speaker.html:77
+#: templates/speakers/dashboard_auth_speaker.html:87
 #, python-format
 msgid "You can <a href=\"%(proposal_submit_url)s\">submit one</a> now!"
 msgstr "你可以現在<a href=\"%(proposal_submit_url)s\">提交</a>你的演講提案!"
