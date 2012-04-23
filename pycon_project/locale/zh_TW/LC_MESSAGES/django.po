@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-04-11 21:26+0800\n"
+"POT-Creation-Date: 2012-04-23 11:54+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -176,6 +176,10 @@ msgstr ""
 #: symposion/speakers/models.py:22
 msgid "Photo"
 msgstr "相片"
+
+#: symposion/speakers/models.py:22
+msgid "Please upload JPG with 950x1190 dimension above"
+msgstr "請上傳 950x1190 解析度以上的 JPG 檔案"
 
 #: symposion/speakers/models.py:24
 msgid "Twitter username"

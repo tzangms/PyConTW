@@ -19,7 +19,7 @@ class Speaker(models.Model):
     user = models.OneToOneField(User, null=True, related_name="speaker_profile")
     name = models.CharField(_("Name"), max_length=100)
     biography = MarkupField(_("Biography"), help_text=_("A little bit about you. Edit using <a href='http://warpedvisions.org/projects/markdown-cheat-sheet/' target='_blank'>Markdown</a>."))
-    photo = models.ImageField(_("Photo"), upload_to="speaker_photos", blank=True)
+    photo = models.ImageField(_("Photo"), upload_to="speaker_photos", blank=True, help_text=_('Please upload JPG with 950x1190 dimension above'))
     twitter_username = models.CharField(
         _("Twitter username"),
         max_length = 15,
