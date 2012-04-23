@@ -1,4 +1,5 @@
 from django.conf import settings
+from django.core.mail import send_mail
 from django.core.exceptions import ObjectDoesNotExist
 from django.db.models import Q
 from django.http import Http404
@@ -162,6 +163,11 @@ def speaker_edit(request, pk=None):
         form = SpeakerForm(request.POST, request.FILES, instance=speaker)
         if form.is_valid():
             form.save()
+
+            speaker_admin_url = 'http://%s/2012/admin/speakers/speaker/%d/' % (request.get_host(), speaker.pk)
+            content = "%s updated his profile.\nadmin: %s" % (speaker_admin_url, speaker.name)
+            send_mail('[PyCon] Speaker profile updated', content, settings.DEFAULT_FROM_EMAIL, [settings.CONTACT_EMAIL])
+
             messages.success(request, "Speaker profile updated.")
             return redirect("speaker_dashboard")
     else:
