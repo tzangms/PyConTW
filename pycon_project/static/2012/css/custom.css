@@ -93,3 +93,13 @@ form ul li label input {
     line-height: 1em;
     margin-left; 50px;
 }
+
+footer {
+    margin-top: 100px;
+    padding: 10px;
+    border-top: 1px solid #eee;
+}
+
+footer img {
+    margin: 10px;
+}
