@@ -1,4 +1,4 @@
-{% load analytics_tags i18n markitup_tags %}
+{% load analytics_tags i18n markitup_tags boxes_tags %}
 <!DOCTYPE html>
 <html lang="{{ LANGUAGE_CODE }}">
     <head>
@@ -92,6 +92,7 @@
             {% endblock %}
 
         <footer>
+            {% box "sponspors_footer" %}
             <hr />
             <div class="container">{% block footer %}{% endblock %}</div>
         </footer>
