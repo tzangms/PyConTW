@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-04-23 11:54+0800\n"
+"POT-Creation-Date: 2012-05-28 23:28+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -197,11 +197,11 @@ msgstr "發佈權限"
 msgid "I agree PyCon TW can release my slides and video recording."
 msgstr "我同意 PyCon TW 可以釋出我的投影片跟影片。"
 
-#: symposion/speakers/views.py:28
+#: symposion/speakers/views.py:29
 msgid "submit another talk proposal"
 msgstr "提交其他演講提案"
 
-#: symposion/speakers/views.py:30
+#: symposion/speakers/views.py:31
 msgid "submit a talk proposal"
 msgstr "提交演講提案"
 
@@ -322,7 +322,7 @@ msgstr "首頁"
 msgid "About"
 msgstr "關於"
 
-#: templates/_nav.html:21 templates/pycon/program.html:4
+#: templates/_nav.html:21 templates/pycon/program.html:78
 msgid "Program"
 msgstr "議程"
 
@@ -371,6 +371,10 @@ msgstr "公告"
 #: templates/homepage.html:44 templates/biblion/blog_list.html:15
 msgid "No blog posts have been published."
 msgstr ""
+
+#: templates/homepage.html:52
+msgid "Eyes on our hardcore sponsors!"
+msgstr "看看我們熱情的贊助商！"
 
 #: templates/account/_openid_login.html:23 templates/account/login.html:42
 msgid "Log in &raquo;"
@@ -924,10 +928,6 @@ msgstr "編輯講者資訊"
 msgid "View on a larger map"
 msgstr "檢視較大的地圖"
 
-#: templates/venue/detail.html:8
-msgid "Building of Humanity and Social Sciences"
-msgstr "中央研究院人文社會館"
-
 #: templates/wakawaka/changes.html:18
 #, python-format
 msgid "Changes for %(slug)s"
@@ -1050,6 +1050,9 @@ msgstr ""
 #, python-format
 msgid "History for %(slug)s"
 msgstr ""
+
+#~ msgid "Building of Humanity and Social Sciences"
+#~ msgstr "中央研究院人文社會館"
 
 #~ msgid ""
 #~ "You will be able to come back and revise your submission until the "
