@@ -1,7 +1,11 @@
 from django.contrib import admin
 
 from symposion.proposals.actions import export_as_csv_action
-from symposion.proposals.models import Proposal
+from symposion.proposals.models import Proposal, ProposalFile
+
+class ProposalFileAdmin(admin.ModelAdmin):
+    list_display = ('proposal', 'file')
+admin.site.register(ProposalFile, ProposalFileAdmin)
 
 
 admin.site.register(Proposal,
