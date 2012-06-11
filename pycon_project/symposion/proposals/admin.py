@@ -4,7 +4,11 @@ from symposion.proposals.actions import export_as_csv_action
 from symposion.proposals.models import Proposal, ProposalFile
 
 class ProposalFileAdmin(admin.ModelAdmin):
-    list_display = ('proposal', 'file')
+    list_display = ('proposal', 'file', 'proposal_speaker')
+    ordering = ('proposal',)
+
+    def proposal_speaker(self, obj):
+        return obj.proposal.speaker.name
 admin.site.register(ProposalFile, ProposalFileAdmin)
 
 
